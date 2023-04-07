@@ -1,11 +1,21 @@
-.header {
-	background-color: yellow;
-}
-
-.h1 {
-	padding: 10px 0;
-}
-
 .container {
 	background-color: blueviolet;
+	display: flex;
+	align-items: center;
+	min-height: 116px;
+	padding: 5px 0;
+}
+
+.menu {
+	flex: 1 1 auto;
+}
+
+.menuList {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+
+.iconMenu {
+	display: none;
 }

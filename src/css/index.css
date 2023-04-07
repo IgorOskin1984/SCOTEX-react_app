@@ -11,7 +11,7 @@ body {
 }
 
 [class*='container'] {
-	min-width: 300px;
+	/*min-width: 500px;*/
 	/*max-width: 1310px;*/
 	max-width: 800px;
 	margin: 0 auto;
