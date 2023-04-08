@@ -1,3 +1,22 @@
 .button {
-	color: white;
+	display: inline-block;
+	text-align: center;
+
+	padding: 16px 30px;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.57;
+	color: #fff;
+
+	background-color: #3D96F4;
+	border-radius: 50px;
+	/* 22/14 */
+	transition: background-color 0.3s ease 0s;
+
+	flex: 0 0 auto;
+}
+
+.button:hover {
+	background-color: #7eb8f5;
 }

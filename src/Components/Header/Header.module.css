@@ -1,6 +1,7 @@
 .container {
 	background-color: blueviolet;
 	display: flex;
+	column-gap: 35px;
 	align-items: center;
 	min-height: 116px;
 	padding: 5px 0;
@@ -12,10 +13,47 @@
 
 .menuList {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: end;
+	column-gap: 35px;
 }
 
 .iconMenu {
 	display: none;
+}
+
+.cart {
+	color: #fff;
+	display: flex;
+	column-gap: 5px;
+	align-items: center;
+
+}
+
+.cart:hover .cartText {
+	text-decoration: underline;
+	color: #3D96F4;
+
+}
+
+.cartText {
+	transition: color 0.5s ease 0s;
+	font-size: 18px;
+	line-height: 1.55;
+	line-height: 155.555556%;
+	/* 28/18 */
+}
+
+.cartQuantity {
+	background: rgba(129, 129, 139, 0.3);
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	font-size: 14px;
+
 }

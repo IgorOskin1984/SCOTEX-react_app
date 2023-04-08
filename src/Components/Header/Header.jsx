@@ -25,7 +25,7 @@ const Header = (props) => {
 				</nav>
 
 				<a className={s.cart} href="3">
-					<span className={s.cartText} >cart</span>
+					<span className={s.cartText} >Cart</span>
 					<span className={s.cartQuantity}>0</span>
 				</a>
 
