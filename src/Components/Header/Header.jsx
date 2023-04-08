@@ -4,6 +4,7 @@ import s from './Header.module.css'
 import logo from './../../images/logo.svg'
 import { Button } from "../small_Components/Button/Button";
 import { MenuLink } from "../small_Components/Menu_link/MenuLink";
+import { Burger } from "../small_Components/Burger/Burger";
 
 
 const Header = (props) => {
@@ -15,7 +16,6 @@ const Header = (props) => {
 				</a>
 
 				<nav className={s.menu}>
-					<button className={s.iconMenu} type="button"></button>
 					<ul className={s.menuList}>
 						<MenuLink />
 						<MenuLink />
@@ -30,6 +30,8 @@ const Header = (props) => {
 				</a>
 
 				<Button />
+				<Burger />
+
 			</div>
 		</div>
 	)
