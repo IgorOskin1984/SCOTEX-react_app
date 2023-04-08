@@ -1,14 +1,27 @@
-.listItem {}
-
 .listLink {
 	color: #FFFFFF;
 	font-size: 16px;
 	line-height: 1.62;
+	transition: all 0.5s ease 0s;
 	/* 26/16 */
 }
 
 .listLink:hover {
 	text-decoration: underline;
 	color: #3D96F4;
-	transition: color 0.5s ease 0s;
 }
+
+
+/*.listItem {}
+
+.listLink {
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 1.62;
+}
+
+.listLink:hover {
+	text-decoration: underline;
+	color: #3D96F4;
+	transition: color 0.5s ease 0s;
+}*/

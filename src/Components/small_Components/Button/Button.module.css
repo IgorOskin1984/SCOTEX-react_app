@@ -1,4 +1,18 @@
 .button {
+	flex: 0 0 auto;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.57;
+	letter-spacing: 2px;
+
+	padding: 16px 30px;
+	border-radius: 50px;
+	background: #3D96F4;
+	/* 22/14 */
+}
+
+/*.button {
 	display: inline-block;
 	text-align: center;
 
@@ -11,7 +25,6 @@
 
 	background-color: #3D96F4;
 	border-radius: 50px;
-	/* 22/14 */
 	transition: background-color 0.3s ease 0s;
 
 	flex: 0 0 auto;
@@ -19,4 +32,4 @@
 
 .button:hover {
 	background-color: #7eb8f5;
-}
+}*/
