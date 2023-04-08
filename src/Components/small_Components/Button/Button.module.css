@@ -1,18 +1,4 @@
 .button {
-	flex: 0 0 auto;
-
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.57;
-	letter-spacing: 2px;
-
-	padding: 16px 30px;
-	border-radius: 50px;
-	background: #3D96F4;
-	/* 22/14 */
-}
-
-/*.button {
 	display: inline-block;
 	text-align: center;
 
@@ -32,4 +18,4 @@
 
 .button:hover {
 	background-color: #7eb8f5;
-}*/
+}

@@ -1,38 +1,16 @@
 @import url('./style_null.css');
 
-body {
-	font-family: 'Poppins';
-	font-weight: 300;
-	background-color: #9C9C9C;
-
-}
-
-#root {
-	height: 100%;
-}
-
-[class*='container'] {
-	margin: 0 auto;
-	/*max-width: 1310px;*/
-	max-width: 1000px;
-	padding: 0 15px;
-}
-
-
-
-/*@import url('./style_null.css');*/
-
 
 /*--------------------*/
 
-/*body {
+body {
 	font-family: 'Poppins';
 	font-weight: 300;
 	color: #9C9C9C;
 	background: #0D0D11;
-}*/
+}
 
-/*[class*='container'] {
+[class*='container'] {
 	min-width: 500px;
 	max-width: 1310px;
 	max-width: 900px;
@@ -42,4 +20,4 @@ body {
 
 #root {
 	height: 100%;
-}*/
+}
