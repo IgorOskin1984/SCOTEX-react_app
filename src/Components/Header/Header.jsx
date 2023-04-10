@@ -3,8 +3,8 @@ import './../../css/App.css'
 import s from './Header.module.css'
 import logo from './../../images/logo.svg'
 import { Button } from "../small_Components/Button/Button";
-import { MenuLink } from "../small_Components/Menu_link/MenuLink";
-import { Burger } from "../small_Components/Burger/Burger";
+import { MenuLink } from "./Menu_link/MenuLink";
+import { Burger } from "./Burger/Burger";
 
 
 const Header = (props) => {
@@ -31,7 +31,6 @@ const Header = (props) => {
 
 				<Button />
 				<Burger />
-
 			</div>
 		</div>
 	)
