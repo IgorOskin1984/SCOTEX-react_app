@@ -9,10 +9,26 @@
 	padding: 0 15px;
 }
 
+.logo {
+	position: relative;
+	z-index: 5;
+}
+
 
 
 @media (max-width: 991.98px) {
 	.container {
 		column-gap: 25px;
+	}
+
+	.container {
+		min-height: 90px;
+	}
+}
+
+@media (max-width:767.98px) {
+	.container {
+		min-height: 70px;
+		column-gap: 15px;
 	}
 }

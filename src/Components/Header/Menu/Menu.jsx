@@ -6,12 +6,14 @@ export const Menu = (props) => {
 	return (
 		<>
 			<nav className={s.menu}>
-				<ul className={s.menuList}>
-					<MenuLink />
-					<MenuLink />
-					<MenuLink />
-					<MenuLink />
-				</ul>
+				<div className={s.menuBody}>
+					<ul className={s.menuList}>
+						<MenuLink />
+						<MenuLink />
+						<MenuLink />
+						<MenuLink />
+					</ul>
+				</div>
 			</nav>
 		</>
 	)

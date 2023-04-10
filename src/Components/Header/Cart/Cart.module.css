@@ -3,6 +3,8 @@
 	display: flex;
 	column-gap: 5px;
 	align-items: center;
+	position: relative;
+	z-index: 5;
 }
 
 .cart:hover .cartText {
