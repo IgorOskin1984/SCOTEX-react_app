@@ -1,3 +1,5 @@
+/*@import url();*/
+
 .cart {
 	color: #fff;
 	display: flex;
@@ -30,4 +32,18 @@
 	align-items: center;
 	font-weight: 500;
 	font-size: 14px;
+}
+
+@media (max-width: 560px) {
+	.cartText {
+		display: none;
+	}
+
+	.cartQuantity {
+		width: 45px;
+		height: 45px;
+		padding-top: 10px;
+		border-radius: 0%;
+		background: url('./../../../images/icons/shopping-cart-svgrepo-com.svg') center / auto 100% no-repeat;
+	}
 }
