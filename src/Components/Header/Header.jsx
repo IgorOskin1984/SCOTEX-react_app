@@ -5,24 +5,22 @@ import logo from './../../images/logo.svg'
 import { Button } from "../small_Components/Button/Button";
 import { Burger } from "./Burger/Burger";
 import { Menu } from "./Menu/Menu";
+import { Cart } from "./Cart/Cart";
 
 
 const Header = (props) => {
 	return (
 		<div className={s.header}>
 			<div className={s.container}>
+
 				<a className={s.logo} href="#">
 					<img src={logo} alt="logo" />
 				</a>
 
 				<Menu />
-
-				<a className={s.cart} href="3">
-					<span className={s.cartText} >Cart</span>
-					<span className={s.cartQuantity}>0</span>
-				</a>
-
+				<Cart />
 				<Button />
+
 				<Burger />
 			</div>
 		</div>
