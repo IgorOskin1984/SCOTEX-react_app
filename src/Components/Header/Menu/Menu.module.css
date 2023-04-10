@@ -1,0 +1,18 @@
+.menu {
+	flex: 1 1 auto;
+}
+
+.menuList {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: end;
+	column-gap: 35px;
+	row-gap: 3px;
+}
+
+@media (max-width: 991.98px) {
+	.menuList {
+		column-gap: 25px;
+	}
+}

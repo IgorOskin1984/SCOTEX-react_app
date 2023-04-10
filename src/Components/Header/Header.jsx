@@ -3,8 +3,8 @@ import './../../css/App.css'
 import s from './Header.module.css'
 import logo from './../../images/logo.svg'
 import { Button } from "../small_Components/Button/Button";
-import { MenuLink } from "./Menu_link/MenuLink";
 import { Burger } from "./Burger/Burger";
+import { Menu } from "./Menu/Menu";
 
 
 const Header = (props) => {
@@ -15,14 +15,7 @@ const Header = (props) => {
 					<img src={logo} alt="logo" />
 				</a>
 
-				<nav className={s.menu}>
-					<ul className={s.menuList}>
-						<MenuLink />
-						<MenuLink />
-						<MenuLink />
-						<MenuLink />
-					</ul>
-				</nav>
+				<Menu />
 
 				<a className={s.cart} href="3">
 					<span className={s.cartText} >Cart</span>
