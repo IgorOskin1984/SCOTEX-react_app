@@ -1,0 +1,36 @@
+.iconMenu {
+	display: none;
+}
+
+@media (max-width:667.98px) {
+	.iconMenu {
+		display: block;
+		flex: 0 0 30px;
+		height: 18px;
+		position: relative;
+		z-index: 5;
+	}
+
+	.iconMenu span,
+	.iconMenu::before,
+	.iconMenu::after {
+		position: absolute;
+		width: 100%;
+		content: '';
+		background-color: #fff;
+		height: 2px;
+		right: 0;
+	}
+
+	.iconMenu::before {
+		top: 0;
+	}
+
+	.iconMenu::after {
+		bottom: 0;
+	}
+
+	.iconMenu span {
+		top: calc(50% - 1px);
+	}
+}
