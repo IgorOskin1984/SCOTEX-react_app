@@ -6,7 +6,7 @@ export const Cart = (props) => {
 		<>
 			<a className={s.cart} href="3">
 				<span className={s.cartText} >Cart</span>
-				<span className={s.cartQuantity}>100</span>
+				<span className={s.cartQuantity}>0</span>
 			</a>
 		</>
 	)

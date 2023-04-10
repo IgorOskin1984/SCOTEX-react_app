@@ -28,3 +28,10 @@
 		padding: 14px 20px;
 	}
 }
+
+@media (max-width: 560.98px) {
+	.button {
+		padding: 14px 15px;
+		letter-spacing: 1px;
+	}
+}
