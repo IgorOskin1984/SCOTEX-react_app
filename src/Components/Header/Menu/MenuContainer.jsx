@@ -1,13 +1,13 @@
 import React from "react";
 import { Menu } from "./Menu";
-
-const menuTitles = ['Home', 'About', 'Pages', 'Services'];
+import state from './../../../Redux/state.js'
 
 class MenuContainer extends React.Component {
+
 	render() {
 		return (
 			<>
-				<Menu titles={menuTitles} />
+				<Menu titles={state.menuTitles} />
 			</>
 		)
 	}

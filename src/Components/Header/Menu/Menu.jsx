@@ -5,7 +5,7 @@ import { MenuLink } from "../Menu_link/MenuLink";
 
 const nenuItemCreater = (arr) => arr.map((arrElement) => {
 	return (
-		<MenuLink title={arrElement} />
+		<MenuLink key={arrElement} title={arrElement} />
 	)
 })
 
