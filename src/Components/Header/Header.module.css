@@ -23,14 +23,14 @@
 	}
 }
 
-@media (max-width:767.98px) {
+@media (max-width:768px) {
 	.container {
 		min-height: 70px;
 		column-gap: 15px;
 	}
 }
 
-@media (max-width:560px) {
+@media (max-width:449.98px) {
 	.logo {
 		width: 32px;
 		overflow: hidden;

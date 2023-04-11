@@ -5,7 +5,7 @@ export const MenuLink = (props) => {
 	return (
 		<>
 			<li className={s.listItem}>
-				<a className={s.listLink} href="#">Services</a>
+				<a className={s.listLink} href="#">{props.title}</a>
 			</li>
 		</>
 	)

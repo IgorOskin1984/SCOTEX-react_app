@@ -3,6 +3,6 @@ const initialState = {
 }
 
 const headerReducer = (state = initialState, action) => {
-	return true
+	return state
 }
 export default headerReducer

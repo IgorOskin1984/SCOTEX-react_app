@@ -6,4 +6,6 @@ const reducers = combineReducers({
 	header: headerReducer
 })
 const store = createStore(reducers)
+window.__store__ = store;
+
 export default store

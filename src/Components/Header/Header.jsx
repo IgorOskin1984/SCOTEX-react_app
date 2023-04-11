@@ -6,6 +6,7 @@ import { Button } from "../small_Components/Button/Button";
 import { Burger } from "./Burger/Burger";
 import { Menu } from "./Menu/Menu";
 import { Cart } from "./Cart/Cart";
+import MenuContainer from "./Menu/MenuContainer";
 
 
 const Header = (props) => {
@@ -17,7 +18,7 @@ const Header = (props) => {
 					<img src={logo} alt="logo" />
 				</a>
 
-				<Menu />
+				<MenuContainer />
 				<Cart />
 				<Button />
 

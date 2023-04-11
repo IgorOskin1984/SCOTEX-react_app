@@ -34,7 +34,7 @@
 	font-size: 14px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 374.98px) {
 	.cartText {
 		display: none;
 	}
