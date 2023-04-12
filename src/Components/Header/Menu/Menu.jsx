@@ -12,7 +12,7 @@ const menuLinkCreater = (arr) => arr.map((arrElement) => {
 export const Menu = (props) => {
 	return (
 		<>
-			<nav className={s.menu}>
+			<nav className={`${s.menu} ${props.isToggle ? s.open : ''}`}>
 				<div className={s.menuBody}>
 					<ul className={s.menuList}>
 						{/*<MenuLink />*/}

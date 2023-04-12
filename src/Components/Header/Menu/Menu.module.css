@@ -51,3 +51,8 @@
 		row-gap: 10px;
 	}
 }
+
+.open .menuBody,
+.open .menuBody::before {
+	left: 0;
+}

@@ -16,7 +16,8 @@ import { connect } from "react-redux";
 
 const mapStateToProps = (state) => {
 	return {
-		menuTitles: state.header.menuTitles
+		menuTitles: state.header.menuTitles,
+		isToggle: state.header.burgerMenuButtonToggle
 	}
 }
 const mapDispatchToProps = (dispatch) => {
