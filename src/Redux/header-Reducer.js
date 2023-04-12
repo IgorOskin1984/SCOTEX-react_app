@@ -5,7 +5,7 @@ const initialState = {
 	burgerMenuButtonToggle: false
 }
 
-const headerReducer = (state = initialState, action) => {
+const oldHeaderReducer = (state = initialState, action) => {
 	switch (action.type) {
 		case SHOW_MENU_TITLES:
 			return {
@@ -24,4 +24,4 @@ export const showMenuTitlesAC = (buttonState) => {
 	}
 }
 
-export default headerReducer
+export default oldHeaderReducer

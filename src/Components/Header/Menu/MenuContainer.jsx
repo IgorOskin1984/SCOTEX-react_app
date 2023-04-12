@@ -1,6 +1,4 @@
 import { Menu } from "./Menu";
-//import state from './../../../Redux/state.js'
-
 import { showMenuTitlesAC } from "./../../../Redux/header-Reducer";
 import { connect } from "react-redux";
 
