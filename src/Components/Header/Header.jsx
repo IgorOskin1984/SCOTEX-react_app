@@ -7,6 +7,7 @@ import { Burger } from "./Burger/Burger";
 import { Menu } from "./Menu/Menu";
 import { Cart } from "./Cart/Cart";
 import MenuContainer from "./Menu/MenuContainer";
+import { BurgerContainer } from "./Burger/BurgerContainer";
 
 
 const Header = (props) => {
@@ -22,7 +23,7 @@ const Header = (props) => {
 				<Cart />
 				<Button />
 
-				<Burger />
+				<BurgerContainer />
 			</div>
 		</div>
 	)

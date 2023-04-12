@@ -8,7 +8,7 @@ const todosSlice = createSlice({
 	},
 	reducers: {
 		showMenuTitlesAC(state, action) {
-			state.burgerMenuButtonToggle = true
+			state.burgerMenuButtonToggle = !state.burgerMenuButtonToggle
 		}
 	}
 })

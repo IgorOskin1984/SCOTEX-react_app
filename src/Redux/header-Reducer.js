@@ -17,11 +17,11 @@ const oldHeaderReducer = (state = initialState, action) => {
 	}
 }
 
-export const showMenuTitlesAC = (buttonState) => {
+const showMenuTitlesAC = (buttonState) => {
 	return {
 		type: SHOW_MENU_TITLES,
 		burgerMenuButtonToggle: buttonState
 	}
 }
 
-export default oldHeaderReducer
+//export default oldHeaderReducer
