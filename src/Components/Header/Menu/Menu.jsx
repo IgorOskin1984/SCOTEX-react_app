@@ -3,7 +3,7 @@ import s from './Menu.module.css'
 import { MenuLink } from "../Menu_link/MenuLink";
 
 
-const nenuItemCreater = (arr) => arr.map((arrElement) => {
+const menuLinkCreater = (arr) => arr.map((arrElement) => {
 	return (
 		<MenuLink key={arrElement} title={arrElement} />
 	)
@@ -16,8 +16,7 @@ export const Menu = (props) => {
 				<div className={s.menuBody}>
 					<ul className={s.menuList}>
 						{/*<MenuLink />*/}
-						{nenuItemCreater(props.titles)}
-
+						{menuLinkCreater(props.menuTitles)}
 					</ul>
 				</div>
 			</nav>

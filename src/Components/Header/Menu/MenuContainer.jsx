@@ -1,15 +1,34 @@
-import React from "react";
 import { Menu } from "./Menu";
-import state from './../../../Redux/state.js'
+//import state from './../../../Redux/state.js'
 
-class MenuContainer extends React.Component {
+import { showMenuTitlesAC } from "./../../../Redux/header-Reducer";
+import { connect } from "react-redux";
 
-	render() {
-		return (
-			<>
-				<Menu titles={state.menuTitles} />
-			</>
-		)
+//class MenuContainer extends React.Component {
+
+//	render() {
+//		return (
+//			<>
+//				<Menu titles={state.menuTitles} />
+//			</>
+//		)
+//	}
+//}
+//debugger
+
+const mapStateToProps = (state) => {
+	return {
+		menuTitles: state.header.menuTitles
 	}
 }
+const mapDispatchToProps = (dispatch) => {
+	return {
+		onClickAddPost: (buttonState) => {
+			dispatch(showMenuTitlesAC(buttonState))
+		}
+	}
+}
+
+const MenuContainer = connect(mapStateToProps, mapDispatchToProps)(Menu)
+
 export default MenuContainer
