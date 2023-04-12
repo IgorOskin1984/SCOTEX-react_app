@@ -52,7 +52,7 @@
 	}
 }
 
-.open .menuBody,
-.open .menuBody::before {
+.openBodyMenu,
+.openBodyMenu::before {
 	left: 0;
 }
