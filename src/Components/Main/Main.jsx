@@ -9,7 +9,18 @@ import ServicesPage from "./Page-Services/ServicesPage";
 import CartPage from "./Page-Cart/CartPage";
 import GetStartedPage from "./Page-GetStarted/GetStartedPage";
 
+const createRoute = (headerLink, MyComponent) => {
+	return (
+		<Route path={`/${headerLink}`} element={
+			<Suspense fallback={<div>Загрузка...</div>}>
+				<MyComponent />
+			</Suspense>
+		} />
+	)
+}
+
 const Main = (props) => {
+	console.log(props);
 	return (
 		<div className={s.mainPage + ' ' + s.container}>
 			<h1>main</h1>
@@ -18,36 +29,13 @@ const Main = (props) => {
 					<Suspense fallback={<div>Загрузка...</div>}>
 						<Navigate to='home' />
 					</Suspense>} />
-				<Route path="/home" element={
-					<Suspense fallback={<div>Загрузка...</div>}>
-						<HomePage />
-					</Suspense>
-				} />
-				<Route path="/about" element={
-					<Suspense fallback={<div>Загрузка...</div>}>
-						<AboutPage />
-					</Suspense>
-				} />
-				<Route path="/pages" element={
-					<Suspense fallback={<div>Загрузка...</div>}>
-						<PagesPage />
-					</Suspense>
-				} />
-				<Route path="/services" element={
-					<Suspense fallback={<div>Загрузка...</div>}>
-						<ServicesPage />
-					</Suspense>
-				} />
-				<Route path="/сart" element={
-					<Suspense fallback={<div>Загрузка...</div>}>
-						<CartPage />
-					</Suspense>
-				} />
-				<Route path="/getStarted" element={
-					<Suspense fallback={<div>Загрузка...</div>}>
-						<GetStartedPage />
-					</Suspense>
-				} />
+
+				{createRoute('home', HomePage)}
+				{createRoute('about', AboutPage)}
+				{createRoute('pages', PagesPage)}
+				{createRoute('services', ServicesPage)}
+				{createRoute('сart', CartPage)}
+				{createRoute('getStarted', GetStartedPage)}
 
 			</Routes>
 		</div>
