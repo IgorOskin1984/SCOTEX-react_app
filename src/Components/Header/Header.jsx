@@ -8,6 +8,7 @@ import { Menu } from "./Menu/Menu";
 import { Cart } from "./Cart/Cart";
 import MenuContainer from "./Menu/MenuContainer";
 import { BurgerContainer } from "./Burger/BurgerContainer";
+import { NavLink } from "react-router-dom";
 
 
 const Header = (props) => {
@@ -15,9 +16,9 @@ const Header = (props) => {
 		<div className={s.header}>
 			<div className={s.container}>
 
-				<a className={s.logo} href="#">
+				<NavLink to='/home' className={s.logo} href="#">
 					<img src={logo} alt="logo" />
-				</a>
+				</NavLink>
 
 				<MenuContainer />
 				<Cart />

@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const todosSlice = createSlice({
+const headerSlice = createSlice({
 	name: 'headerSliceName',
 	initialState: {
-		menuTitles: ['Home', 'About', 'Pages', 'Services'],
+		menuTitles: ['home', 'about', 'pages', 'services'],
 		burgerMenuButtonToggle: false
 	},
 	reducers: {
@@ -13,6 +13,6 @@ const todosSlice = createSlice({
 	}
 })
 
-//export default todosSlice;
-export default todosSlice.reducer;
-export const { showMenuTitlesAC } = todosSlice.actions
+//export default headerSlice;
+export default headerSlice.reducer;
+export const { showMenuTitlesAC } = headerSlice.actions

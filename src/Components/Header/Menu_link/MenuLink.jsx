@@ -1,11 +1,12 @@
 import React from "react";
 import s from './MenuLink.module.css'
+import { NavLink } from "react-router-dom";
 
 export const MenuLink = (props) => {
 	return (
 		<>
 			<li className={s.listItem}>
-				<a className={s.listLink} href="#">{props.title}</a>
+				<NavLink to={`/${props.linkPath}`} className={s.listLink} >{props.title}</NavLink>
 			</li>
 		</>
 	)

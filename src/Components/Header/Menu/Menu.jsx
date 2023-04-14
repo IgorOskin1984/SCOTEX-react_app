@@ -3,9 +3,14 @@ import s from './Menu.module.css'
 import { MenuLink } from "../Menu_link/MenuLink";
 
 
-const menuLinkCreater = (arr) => arr.map((arrElement) => {
+const menuLinkCreater = (arr) => arr.map((title) => {
+	if (!title) {
+		return console.error('error at initial array headerSlice');
+	}
+	let newtitle = title[0].toUpperCase() + title.slice(1);
+
 	return (
-		<MenuLink key={arrElement} title={arrElement} />
+		<MenuLink key={title} linkPath={title} title={newtitle} />
 	)
 })
 
