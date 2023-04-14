@@ -1,4 +1,11 @@
-.header {}
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #0D0D11;
+	opacity: 80%;
+}
 
 .container {
 	background-color: blueviolet;

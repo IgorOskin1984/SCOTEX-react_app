@@ -1,0 +1,38 @@
+.aboutPage {
+	padding-top: 160px;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+}
+
+.content {
+	max-width: 50%;
+}
+
+.images {
+	display: flex;
+}
+
+.title {}
+
+.text {}
+
+.actions {}
+
+.dark {}
+
+.imageItem {}
+
+@media (max-width: 991.98px) {
+	.aboutPage {
+		padding-top: 135px;
+	}
+}
+
+@media (max-width:768px) {
+	.aboutPage {
+		padding-top: 115px;
+	}
+}

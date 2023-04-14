@@ -53,7 +53,6 @@ const Main = (props) => {
 	console.log(props);
 	return (
 		<div className={s.mainPage + ' ' + s.container}>
-			<h1>main</h1>
 			<Routes>
 				<Route path="/" element={
 					<Suspense fallback={<div>Загрузка...</div>}>
