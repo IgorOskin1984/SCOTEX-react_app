@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Suspense } from "react";
 import './../../css/index.css'
 import s from './Main.module.css'
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import HomePage from "./Page-Home/HomePage";
 import AboutPage from "./Page-About/AboutPage";
 import PagesPage from "./Page-Pages/PagesPage";
@@ -14,13 +14,41 @@ const Main = (props) => {
 		<div className={s.mainPage + ' ' + s.container}>
 			<h1>main</h1>
 			<Routes>
-				{/*<Route path="/" element={<Main />} />*/}
-				<Route path="/home" element={<HomePage />} />
-				<Route path="/about" element={<AboutPage />} />
-				<Route path="/pages" element={<PagesPage />} />
-				<Route path="/services" element={<ServicesPage />} />
-				<Route path="/сart" element={<CartPage />} />
-				<Route path="/getStarted" element={<GetStartedPage />} />
+				<Route path="/" element={
+					<Suspense fallback={<div>Загрузка...</div>}>
+						<Navigate to='home' />
+					</Suspense>} />
+				<Route path="/home" element={
+					<Suspense fallback={<div>Загрузка...</div>}>
+						<HomePage />
+					</Suspense>
+				} />
+				<Route path="/about" element={
+					<Suspense fallback={<div>Загрузка...</div>}>
+						<AboutPage />
+					</Suspense>
+				} />
+				<Route path="/pages" element={
+					<Suspense fallback={<div>Загрузка...</div>}>
+						<PagesPage />
+					</Suspense>
+				} />
+				<Route path="/services" element={
+					<Suspense fallback={<div>Загрузка...</div>}>
+						<ServicesPage />
+					</Suspense>
+				} />
+				<Route path="/сart" element={
+					<Suspense fallback={<div>Загрузка...</div>}>
+						<CartPage />
+					</Suspense>
+				} />
+				<Route path="/getStarted" element={
+					<Suspense fallback={<div>Загрузка...</div>}>
+						<GetStartedPage />
+					</Suspense>
+				} />
+
 			</Routes>
 		</div>
 	)
