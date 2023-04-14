@@ -3,7 +3,7 @@ import Main from "./Main";
 
 const mapStateToProps = (state) => {
 	return {
-		headerLinks: state.header.headersLinks
+		headerLinks: state.header.headerLinks
 	}
 }
 

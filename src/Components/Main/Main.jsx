@@ -9,9 +9,39 @@ import ServicesPage from "./Page-Services/ServicesPage";
 import CartPage from "./Page-Cart/CartPage";
 import GetStartedPage from "./Page-GetStarted/GetStartedPage";
 
+//const renderComponent = (componentName) => {
+//	const folderName = `Page-${componentName}`
+//	const fileName = `${componentName}Page`
+
+//	const MyComponent = React.lazy(() => import(`./${folderName}/${fileName}`))
+//	//const MyComponent = <componentName />
+//	console.log(MyComponent);
+//	return MyComponent;
+//}
+
+//const createRoute2 = (headerLink, MyComponent) => {
+//	return (
+//		<Route path={headerLink} element={
+//			<Suspense fallback={<div>Загрузка...</div>}>
+//				{renderComponent(MyComponent)}
+//			</Suspense>
+//		} />
+//	)
+//}
+
+//const mainRouterCreaters = (arr) => {
+//	arr.map((title) => {
+//		const headerLink = `/${title}`
+//		const MyComponent = `${title[0].toUpperCase() + title.slice(1)}`
+//		return (
+//			createRoute2(headerLink, MyComponent)
+//		)
+//	})
+//}
+
 const createRoute = (headerLink, MyComponent) => {
 	return (
-		<Route path={`/${headerLink}`} element={
+		<Route path={headerLink} element={
 			<Suspense fallback={<div>Загрузка...</div>}>
 				<MyComponent />
 			</Suspense>
@@ -29,6 +59,8 @@ const Main = (props) => {
 					<Suspense fallback={<div>Загрузка...</div>}>
 						<Navigate to='home' />
 					</Suspense>} />
+
+				{/*{mainRouterCreaters(props.headerLinks)}*/}
 
 				{createRoute('home', HomePage)}
 				{createRoute('about', AboutPage)}
