@@ -3,7 +3,7 @@ import s from './AboutPage.module.css'
 import { Button } from "../../small_Components/Button/Button";
 
 const AboutPage = (props) => {
-	console.log(props.peoplsPhotos);
+	console.log(props);
 	return <>
 		<div className={s.aboutPage}>
 			<div className={s.container}>
@@ -17,8 +17,10 @@ const AboutPage = (props) => {
 						</p>
 					</div>
 					<div className={s.actions}>
-						<Button />
-						<Button />
+						<Button buttonText={props.buttonText.ourServices} />
+						<Button buttonText={props.buttonText.contactUs}
+							buttonColor={props.buttonColor.gray}
+						/>
 					</div>
 				</div>
 

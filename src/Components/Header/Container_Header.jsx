@@ -1,13 +1,11 @@
 import { connect } from "react-redux";
-import AboutPage from './AboutPage'
+import Header from "./Header";
 
 const mapStateToProps = (state) => {
 	return {
-		peoplsPhotos: state.aboutPage.peoplsPhotos,
 		buttonText: state.commonSate.buttons.buttonTexts,
 		buttonColor: state.commonSate.buttons.buttonColors
 	}
 }
-const AboutPageContainer = connect(mapStateToProps, null)(AboutPage)
 
-export default AboutPageContainer;
+export const HeaderContainer = connect(mapStateToProps, null)(Header)
