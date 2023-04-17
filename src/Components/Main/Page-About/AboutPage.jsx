@@ -25,19 +25,19 @@ const AboutPage = (props) => {
 
 					<div className={s.images}>
 						<div className={s.imageColumn}>
-							<div className={s.imageItem}>
+							<div className={`${s.imageItem} ${s.item_1}`}>
 								<img src={props.peoplsPhotos[0]} alt="" />
 							</div>
-							<div className={s.imageItem}>
+							<div className={`${s.imageItem} ${s.item_2}`}>
 								<img src={props.peoplsPhotos[1]} alt="" />
 							</div>
 						</div>
 
 						<div className={s.imageColumn}>
-							<div className={s.imageItem}>
+							<div className={`${s.imageItem} ${s.item_3}`}>
 								<img src={props.peoplsPhotos[2]} alt="" />
 							</div>
-							<div className={s.imageItem}>
+							<div className={`${s.imageItem} ${s.item_4}`}>
 								<img src={props.peoplsPhotos[3]} alt="" />
 							</div>
 						</div>

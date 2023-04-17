@@ -37,6 +37,22 @@
 
 .imageItem {}
 
+.item_1,
+.item_4 {
+	border-radius: 50% / 29%;
+	overflow: hidden;
+}
+
+.item_3 {
+	border-radius: 50% 0% 50% 50%;
+	overflow: hidden;
+}
+
+.item_2 {
+	border-radius: 50% 50% 0% 50%;
+	overflow: hidden;
+}
+
 .imageItem img {
 	max-width: 100%;
 }
