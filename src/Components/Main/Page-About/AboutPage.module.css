@@ -38,7 +38,15 @@
 	left: -34px;
 }
 
-.text {}
+.text {
+	font-size: 18px;
+	line-height: 1.5;
+	/* 27/18 */
+}
+
+.text:not(:last-child) {
+	margin-bottom: 33px;
+}
 
 .actions {}
 
