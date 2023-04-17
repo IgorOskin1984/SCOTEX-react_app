@@ -13,7 +13,14 @@
 }
 
 
-.title {}
+.title {
+	font-weight: 500;
+	font-size: 51px;
+	line-height: 1.19;
+	/* 61/51 */
+	color: #FFFFFF;
+	max-width: 520px;
+}
 
 .text {}
 
@@ -35,22 +42,22 @@
 	gap: 32px;
 }
 
-.imageItem {}
+.imageItem {
+	overflow: hidden;
+
+}
 
 .item_1,
 .item_4 {
 	border-radius: 50% / 29%;
-	overflow: hidden;
 }
 
 .item_3 {
 	border-radius: 50% 0% 50% 50%;
-	overflow: hidden;
 }
 
 .item_2 {
 	border-radius: 50% 50% 0% 50%;
-	overflow: hidden;
 }
 
 .imageItem img {
