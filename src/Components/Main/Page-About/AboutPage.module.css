@@ -1,5 +1,6 @@
 .aboutPage {
 	padding-top: 160px;
+	padding-bottom: 100px;
 }
 
 .container {
@@ -96,11 +97,53 @@
 @media (max-width: 991.98px) {
 	.aboutPage {
 		padding-top: 135px;
+		padding-bottom: 60px;
+	}
+
+	.title {
+		font-size: 44px;
 	}
 }
 
-@media (max-width:768px) {
+@media (max-width:767.98px) {
 	.aboutPage {
 		padding-top: 115px;
+		padding-bottom: 30px;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+
+	.content {
+		align-items: stretch;
+	}
+
+	.title {
+		font-size: 32px;
+	}
+
+	.title:not(:last-child),
+	.text:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+}
+
+@media (max-width:425px) {
+	.actions {
+		flex-direction: column;
+		column-gap: 32px;
+		row-gap: 15px;
+	}
+}
+
+@media (min-width:768px) {
+	.title {
+		max-width: 520px;
+	}
+
+	.text {
+		max-width: 500px;
 	}
 }
