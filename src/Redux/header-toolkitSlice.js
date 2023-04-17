@@ -3,7 +3,9 @@ import { createSlice } from "@reduxjs/toolkit";
 const headerSlice = createSlice({
 	name: 'headerSliceName',
 	initialState: {
-		headerLinks: ['home', 'about', 'pages', 'services', 'сart', 'getStarted'],
+		headerLinks: ['about',
+			//'home',  'pages', 'services', 'сart', 'getStarted'
+		],
 		menuTitles: ['home', 'about', 'pages', 'services'],
 		burgerMenuButtonToggle: false
 	},

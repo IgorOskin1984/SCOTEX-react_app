@@ -1,5 +1,6 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import todosSliceReducer from "./header-toolkitSlice";
+import headerSliceReducer from "./header-toolkitSlice";
+import aboutPageSliceReducer from "./aboutPage-Reducer";
 
 //const rootReducer = combineReducers({
 //	header: todosSliceReducer
@@ -7,7 +8,8 @@ import todosSliceReducer from "./header-toolkitSlice";
 
 export const store = configureStore({
 	reducer: {
-		header: todosSliceReducer
 		//header: todosSliceReducer.reducer
+		header: headerSliceReducer,
+		aboutPage: aboutPageSliceReducer
 	}
 })

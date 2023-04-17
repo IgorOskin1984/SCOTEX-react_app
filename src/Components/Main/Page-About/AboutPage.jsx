@@ -1,9 +1,10 @@
 import React from "react";
 import s from './AboutPage.module.css'
 import { Button } from "../../small_Components/Button/Button";
-import imagePeople from './../../../images/peopls-img/01.jpg'
+import ImageItem from "../../small_Components/Image-Item/ImageItem";
 
 const AboutPage = (props) => {
+	console.log(props.peoplsPhotos);
 	return (
 		<>
 			<div className={s.aboutPage}>
@@ -24,17 +25,14 @@ const AboutPage = (props) => {
 					</div>
 
 					<div className={s.images}>
-						<div className={s.imageItem}>
-							<img src={imagePeople} alt="" />
+						<div className={s.imageColumn}>
+							<ImageItem peoplsPhoto={props.peoplsPhotos[0]} />
+							<ImageItem peoplsPhoto={props.peoplsPhotos[1]} />
 						</div>
-						<div className={s.imageItem}>
-							<img src={imagePeople} alt="" />
-						</div>
-						<div className={s.imageItem}>
-							<img src={imagePeople} alt="" />
-						</div>
-						<div className={s.imageItem}>
-							<img src={imagePeople} alt="" />
+
+						<div className={s.imageColumn}>
+							<ImageItem peoplsPhoto={props.peoplsPhotos[2]} />
+							<ImageItem peoplsPhoto={props.peoplsPhotos[3]} />
 						</div>
 					</div>
 
