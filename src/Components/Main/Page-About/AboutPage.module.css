@@ -24,13 +24,20 @@
 .images {
 	flex: 0 1 50%;
 	display: flex;
+	column-gap: 60px;
 }
 
 .imageColumn {
 	display: flex;
 	flex-direction: column;
+	gap: 32px;
 }
 
+.imageItem {}
+
+.imageItem img {
+	max-width: 100%;
+}
 
 
 @media (max-width: 991.98px) {
