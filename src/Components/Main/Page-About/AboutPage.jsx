@@ -1,7 +1,6 @@
 import React from "react";
 import s from './AboutPage.module.css'
 import { Button } from "../../small_Components/Button/Button";
-import ImageItem from "../../small_Components/Image-Item/ImageItem";
 
 const AboutPage = (props) => {
 	console.log(props.peoplsPhotos);
@@ -26,13 +25,21 @@ const AboutPage = (props) => {
 
 					<div className={s.images}>
 						<div className={s.imageColumn}>
-							<ImageItem peoplsPhoto={props.peoplsPhotos[0]} />
-							<ImageItem peoplsPhoto={props.peoplsPhotos[1]} />
+							<div className={s.imageItem}>
+								<img src={props.peoplsPhotos[0]} alt="" />
+							</div>
+							<div className={s.imageItem}>
+								<img src={props.peoplsPhotos[1]} alt="" />
+							</div>
 						</div>
 
 						<div className={s.imageColumn}>
-							<ImageItem peoplsPhoto={props.peoplsPhotos[2]} />
-							<ImageItem peoplsPhoto={props.peoplsPhotos[3]} />
+							<div className={s.imageItem}>
+								<img src={props.peoplsPhotos[2]} alt="" />
+							</div>
+							<div className={s.imageItem}>
+								<img src={props.peoplsPhotos[3]} alt="" />
+							</div>
 						</div>
 					</div>
 
