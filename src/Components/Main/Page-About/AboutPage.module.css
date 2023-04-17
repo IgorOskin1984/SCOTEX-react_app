@@ -24,7 +24,9 @@
 .images {
 	flex: 0 1 50%;
 	display: flex;
-	column-gap: 60px;
+	column-gap: 9.615385%;
+	/* 60/624 */
+	justify-content: center;
 }
 
 .imageColumn {
