@@ -23,6 +23,10 @@
 	background-color: #7eb8f5;
 }
 
+/*.dark {
+	background-color: rgba(129, 129, 139, 0.2);
+}*/
+
 @media (max-width: 991.98px) {
 	.button {
 		padding: 14px 20px;

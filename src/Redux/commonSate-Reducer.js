@@ -11,7 +11,7 @@ const commonSateSlice = createSlice({
 			},
 			buttonColors: {
 				blue: '#3D96F4',
-				gray: ' rgba(129, 129, 139, 0.2)'
+				gray: 'rgba(129, 129, 139, 0.2)'
 			}
 		},
 	}
