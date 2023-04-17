@@ -1,11 +1,10 @@
 import React from "react";
+import AboutPageContainer from "../Page-About/Container_AboutPage";
 
 const HomePage = (props) => {
-	return (
-		<>
-			<h1>HomePage</h1>
-		</>
-	)
+	return <>
+		<AboutPageContainer />
+	</>
 }
 
 export default HomePage;
