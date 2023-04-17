@@ -1,11 +1,12 @@
 import React from "react";
 import s from './AboutPage.module.css'
 import { Button } from "../../small_Components/Button/Button";
+import ClientsPageContainer from "../Page-Clients/Container_ClientsPage";
+
 
 const AboutPage = (props) => {
-	console.log(props);
 	return <>
-		<div className={s.aboutPage}>
+		<section className={s.aboutPage}>
 			<div className={s.container}>
 				<div className={s.content}>
 					<h1 className={s.title}>Marketing solutions that grow your business.</h1>
@@ -45,7 +46,9 @@ const AboutPage = (props) => {
 				</div>
 
 			</div>
-		</div>
+		</section>
+
+		<ClientsPageContainer />
 	</>
 }
 
