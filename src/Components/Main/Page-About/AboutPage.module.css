@@ -24,7 +24,9 @@
 	position: relative;
 }
 
-
+.title:not(:last-child) {
+	margin-bottom: 28px;
+}
 
 .title::before {
 	content: '';
