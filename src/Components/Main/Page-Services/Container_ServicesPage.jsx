@@ -3,7 +3,12 @@ import ServicesPage from "./ServicesPage";
 
 const mapStateToProps = (state) => {
 	return {
-		buttonText: state.commonSate.buttons.buttonTexts.allServices
+		buttonText: state.commonSate.buttons.buttonTexts.allServices,
+
+		socialMediaMarketing: state.servicesPage.socialMediaMarketing,
+		emailMarketing: state.servicesPage.emailMarketing,
+		paidAdvertising: state.servicesPage.paidAdvertising,
+		seoOptimization: state.servicesPage.seoOptimization
 	}
 }
 

@@ -25,7 +25,6 @@ const commonSateSlice = createSlice({
 			tittleText: 'TRUSTED BY startups and large enterprises'
 		}
 	}
-
 })
 
 export default commonSateSlice.reducer
