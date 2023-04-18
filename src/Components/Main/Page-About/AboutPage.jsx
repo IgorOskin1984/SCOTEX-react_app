@@ -3,6 +3,7 @@ import s from './AboutPage.module.css'
 import contStyle from './../../../css/content.module.css'
 import { Button } from "../../small_Components/Button/Button";
 import ClientsPageContainer from "../Page-Clients/Container_ClientsPage";
+import ContentComponent from "../../small_Components/Content-Component/ContentComponent";
 
 
 const AboutPage = (props) => {
@@ -10,14 +11,7 @@ const AboutPage = (props) => {
 		<section className={s.aboutPage}>
 			<div className={s.container}>
 				<div className={contStyle.content}>
-					<h1 className={contStyle.title}>Marketing solutions that grow your business.</h1>
-					<div className={contStyle.text}>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-							suspendisse varius enim in eros elementum tristique.
-							Duis cursus, mi quis viverra ornare, eros dolor.
-						</p>
-					</div>
+					<ContentComponent payload={props.aboutPageContent} />
 					<div className={contStyle.actions}>
 						<Button buttonText={props.buttonText.ourServices} />
 						<Button buttonText={props.buttonText.contactUs}

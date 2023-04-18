@@ -13,28 +13,6 @@
 	align-self: center;
 }
 
-.label {
-	display: inline-block;
-	border: 1px solid rgba(129, 129, 139, 0.2);
-	border-radius: 12px;
-	font-weight: 300;
-	font-size: 11px;
-	line-height: 1.54;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	padding: 11px 19px;
-	color: #9C9C9C;
-	transition: border 0.3s ease 0s;
-}
-
-.label:not(:last-child) {
-	margin-bottom: 19px;
-}
-
-.label:hover {
-	border: 1px solid rgba(129, 129, 139, 0.4);
-}
-
 .title {
 	font-weight: 500;
 	font-size: 51px;

@@ -8,7 +8,8 @@ const mapStateToProps = (state) => {
 		socialMediaMarketing: state.servicesPage.socialMediaMarketing,
 		emailMarketing: state.servicesPage.emailMarketing,
 		paidAdvertising: state.servicesPage.paidAdvertising,
-		seoOptimization: state.servicesPage.seoOptimization
+		seoOptimization: state.servicesPage.seoOptimization,
+		servicesPageContent: state.commonSate.content.servicesPageContent
 	}
 }
 

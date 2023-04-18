@@ -5,55 +5,8 @@
 
 .container {
 	display: flex;
-	/*align-items: center;*/
 	gap: 32px;
 }
-
-/*.content {
-	flex: 0 1 50%;
-	align-self: center;
-}
-
-
-.title {
-	font-weight: 500;
-	font-size: 51px;
-	line-height: 1.19;
-	color: #FFFFFF;
-	max-width: 520px;
-	position: relative;
-}
-
-.title:not(:last-child) {
-	margin-bottom: 28px;
-}
-
-.title::before {
-	content: '';
-	background: url('./../../../images/icons/decor.svg') 0 0 / 100% no-repeat;
-	width: 122px;
-	height: 122px;
-	position: absolute;
-	top: -10px;
-	left: -34px;
-}
-
-.text {
-	font-size: 18px;
-	line-height: 1.5;
-	max-width: 500px;
-}
-
-.text:not(:last-child) {
-	margin-bottom: 33px;
-}
-
-.actions {
-	display: flex;
-	gap: 32px;
-}*/
-
-.dark {}
 
 .images {
 	flex: 0 1 50%;
@@ -97,10 +50,6 @@
 		padding-top: 40px;
 		padding-bottom: 60px;
 	}
-
-	.title {
-		font-size: 44px;
-	}
 }
 
 @media (max-width:767.98px) {
@@ -116,16 +65,6 @@
 	.content {
 		align-items: stretch;
 	}
-
-	.title {
-		font-size: 32px;
-	}
-
-	.title:not(:last-child),
-	.text:not(:last-child) {
-		margin-bottom: 15px;
-	}
-
 }
 
 @media (max-width:425px) {
@@ -133,15 +72,5 @@
 		flex-direction: column;
 		column-gap: 32px;
 		row-gap: 15px;
-	}
-}
-
-@media (min-width:768px) {
-	.title {
-		max-width: 520px;
-	}
-
-	.text {
-		max-width: 500px;
 	}
 }

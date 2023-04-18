@@ -2,6 +2,7 @@ import React from "react";
 import contStyle from './../../../css/content.module.css'
 import s from './ServicesPage.module.css'
 import { Button } from "../../small_Components/Button/Button";
+import ContentComponent from "../../small_Components/Content-Component/ContentComponent";
 
 const ServicesItem = ({ paylod }) => {
 	return <>
@@ -22,11 +23,7 @@ const ServicesPage = (props) => {
 		<section className={s.services}>
 			<div className={s.container}>
 				<div className={s.content}>
-					<a href="#" className={s.label} >Services</a>
-					<h1 className={s.title}>Services we offer</h1>
-					<div className={s.text}>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.</p>
-					</div>
+					<ContentComponent payload={props.servicesPageContent} />
 					<div className={s.actions}>
 						<Button buttonText={props.buttonText} />
 					</div>

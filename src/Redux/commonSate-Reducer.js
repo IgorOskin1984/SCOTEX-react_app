@@ -23,6 +23,26 @@ const commonSateSlice = createSlice({
 		clients: {
 			images: [c01, c02, c03, c04, c05],
 			tittleText: 'TRUSTED BY startups and large enterprises'
+		},
+		content: {
+			aboutPageContent: {
+				title: 'Marketing solutions that grow your business.',
+				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.'
+			},
+			servicesPageContent: {
+				label: 'services',
+				title: 'Services we offer',
+				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.'
+			},
+			//aboutPageContent: {
+			//	label: 'why choose us',
+			//	title: 'Marketing solutions that grow your business.',
+			//	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.'
+			//},
+			//aboutPageContent: {
+			//	title: 'Marketing solutions that grow your business.',
+			//	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.'
+			//}
 		}
 	}
 })
