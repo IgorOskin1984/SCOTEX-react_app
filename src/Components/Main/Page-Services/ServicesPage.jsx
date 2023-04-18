@@ -1,5 +1,4 @@
 import React from "react";
-import contStyle from './../../../css/content.module.css'
 import s from './ServicesPage.module.css'
 import { Button } from "../../small_Components/Button/Button";
 import ContentComponent from "../../small_Components/Content-Component/ContentComponent";
