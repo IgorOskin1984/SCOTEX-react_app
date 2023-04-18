@@ -11,10 +11,10 @@
 	font-size: 14px;
 	line-height: 1.57;
 	/* 22/14 */
+	margin-bottom: 44px;
 }
 
 .items {
-	margin-top: 44px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -28,4 +28,26 @@
 
 .item img {
 	max-width: 100%;
+}
+
+@media (max-width:991.98px) {
+	.container {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.tittle {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width:767.98px) {
+	.container {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.tittle {
+		margin-bottom: 20px;
+	}
 }
