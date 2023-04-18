@@ -1,0 +1,29 @@
+.services {
+	padding-top: 44px;
+}
+
+.container {
+	display: flex;
+}
+
+.title {
+	font-weight: 500;
+	font-size: 51px;
+	line-height: 1.19;
+	/* 61/51 */
+	color: #FFFFFF;
+	max-width: 520px;
+	position: relative;
+}
+
+.title:not(:last-child) {
+	margin-bottom: 28px;
+}
+
+.items {
+	flex: 0 1 50%;
+}
+
+.itemColum {}
+
+.item {}

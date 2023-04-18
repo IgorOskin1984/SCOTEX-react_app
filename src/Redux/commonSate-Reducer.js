@@ -12,7 +12,8 @@ const commonSateSlice = createSlice({
 			buttonTexts: {
 				getStarted: 'Get started',
 				ourServices: 'Our services',
-				contactUs: 'Contact us'
+				contactUs: 'Contact us',
+				allServices: 'All services'
 			},
 			buttonColors: {
 				blue: '#3D96F4',
@@ -22,7 +23,6 @@ const commonSateSlice = createSlice({
 		clients: {
 			images: [c01, c02, c03, c04, c05],
 			tittleText: 'TRUSTED BY startups and large enterprises'
-
 		}
 	}
 
