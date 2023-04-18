@@ -14,9 +14,9 @@
 .img_01 {}
 
 .img_02 {
-	/*border-radius: 50% 50% 50% 0;
+	border-radius: 50% 50% 50% 0;
 	align-self: flex-end;
-	overflow: hidden;*/
+	overflow: hidden;
 }
 
 .img_01 img,
