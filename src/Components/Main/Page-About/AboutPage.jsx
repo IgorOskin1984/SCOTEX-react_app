@@ -43,9 +43,6 @@ const AboutPage = (props) => {
 
 			</div>
 		</section>
-
-		<WhyUsContainer />
-
 		<ClientsPageContainer />
 	</>
 }

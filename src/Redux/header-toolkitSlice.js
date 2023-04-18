@@ -4,7 +4,7 @@ const headerSlice = createSlice({
 	name: 'headerSliceName',
 	initialState: {
 		headerLinks: ['home', 'about', 'services'
-			//  'pages', 'services', 'сart', 'getStarted'
+			//  'pages',  'сart', 'getStarted'
 		],
 		menuTitles: ['home', 'about', 'pages', 'services'],
 		burgerMenuButtonToggle: false
