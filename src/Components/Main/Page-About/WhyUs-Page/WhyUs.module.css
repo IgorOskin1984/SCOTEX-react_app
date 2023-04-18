@@ -74,3 +74,18 @@
 		flex-direction: column-reverse;
 	}
 }
+
+@media (max-width: 425px) {
+	.images {
+		flex-direction: column-reverse;
+	}
+
+	.img_02 {
+		align-self: flex-start;
+	}
+
+	.whyUs {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
