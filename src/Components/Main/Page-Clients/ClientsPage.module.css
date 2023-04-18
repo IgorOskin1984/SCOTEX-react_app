@@ -10,11 +10,11 @@
 	letter-spacing: 1px;
 	font-size: 14px;
 	line-height: 1.57;
-	margin-top: 44px;
 	/* 22/14 */
 }
 
 .items {
+	margin-top: 44px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
