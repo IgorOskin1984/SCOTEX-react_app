@@ -8,10 +8,14 @@
 .images {
 	flex: 0 1 50%;
 	display: flex;
-
+	align-self: center;
 }
 
-.img_01 {}
+.img_01 {
+	align-self: flex-end;
+	overflow: hidden;
+	border-radius: 90% 0% 50% 50% / 50% 0% 27.5% 27.5%;
+}
 
 .img_02 {
 	border-radius: 50% 50% 50% 0;
@@ -26,6 +30,7 @@
 
 .content {
 	flex: 0 1 50%;
+	align-self: center;
 }
 
 .list {
