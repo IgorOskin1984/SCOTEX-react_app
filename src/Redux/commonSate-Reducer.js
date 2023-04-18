@@ -34,11 +34,11 @@ const commonSateSlice = createSlice({
 				title: 'Services we offer',
 				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.'
 			},
-			//aboutPageContent: {
-			//	label: 'why choose us',
-			//	title: 'Marketing solutions that grow your business.',
-			//	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.'
-			//},
+			whyUsPageContent: {
+				label: 'why choose us',
+				title: 'We help great brandsscale with content marketing.',
+				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.'
+			}
 			//aboutPageContent: {
 			//	title: 'Marketing solutions that grow your business.',
 			//	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.'

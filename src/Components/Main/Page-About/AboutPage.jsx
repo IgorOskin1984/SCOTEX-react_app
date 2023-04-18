@@ -4,6 +4,7 @@ import contStyle from './../../../css/content.module.css'
 import { Button } from "../../small_Components/Button/Button";
 import ClientsPageContainer from "../Page-Clients/Container_ClientsPage";
 import ContentComponent from "../../small_Components/Content-Component/ContentComponent";
+import WhyUsContainer from "./WhyUs-Page/Container_WhyUs";
 
 
 const AboutPage = (props) => {
@@ -42,6 +43,8 @@ const AboutPage = (props) => {
 
 			</div>
 		</section>
+
+		<WhyUsContainer />
 
 		<ClientsPageContainer />
 	</>

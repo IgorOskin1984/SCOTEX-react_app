@@ -1,0 +1,57 @@
+.whyUs {}
+
+.container {
+	display: flex;
+	gap: 64px;
+}
+
+.images {
+	flex: 0 1 50%;
+	display: flex;
+
+}
+
+.img_01 {}
+
+.img_02 {
+	/*border-radius: 50% 50% 50% 0;
+	align-self: flex-end;
+	overflow: hidden;*/
+}
+
+.img_01 img,
+.img_02 img {
+	width: 100%;
+}
+
+.content {
+	flex: 0 1 50%;
+}
+
+.list {
+	margin-top: 35px;
+}
+
+.listItem {
+	color: #9C9C9C;
+	font-size: 16px;
+	line-height: 1.5;
+	position: relative;
+	display: flex;
+	padding-left: 42px;
+}
+
+.listItem:not(:last-child) {
+	margin-bottom: 25px;
+}
+
+.listItem::before {
+	content: '';
+	background: url('./../../../../images/icons/whyUs/checked.svg');
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 0;
+	top: -4px;
+	/*background: rgba(129, 129, 139, 0.1);*/
+}

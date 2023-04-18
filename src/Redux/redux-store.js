@@ -3,6 +3,7 @@ import headerSliceReducer from "./header-toolkitSlice";
 import aboutPageSliceReducer from "./aboutPage-Reducer";
 import commonSateSlice from "./commonSate-Reducer";
 import servicesPageSliceReducer from "./servicesPage-Reducer";
+import whyUsPageSliceReducer from "./whyUs-Reducer";
 
 //const rootReducer = combineReducers({
 //	header: todosSliceReducer
@@ -14,6 +15,7 @@ export const store = configureStore({
 		header: headerSliceReducer,
 		aboutPage: aboutPageSliceReducer,
 		commonSate: commonSateSlice,
-		servicesPage: servicesPageSliceReducer
+		servicesPage: servicesPageSliceReducer,
+		whyUsPage: whyUsPageSliceReducer
 	}
 })
