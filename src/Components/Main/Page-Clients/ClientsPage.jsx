@@ -3,11 +3,11 @@ import s from './ClientsPage.module.css'
 
 const imgRender = (arr) => {
 	return arr.map((img) => {
-		return <>
-			<div className={s.item}>
+		return (
+			<div key={img} className={s.item}>
 				<img src={img} alt="img" />
 			</div>
-		</>
+		)
 	})
 }
 
