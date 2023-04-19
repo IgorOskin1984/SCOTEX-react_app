@@ -1,11 +1,16 @@
 import React from "react";
-import AboutPageContainer from "../Page-About/Container_AboutPage";
 import ServicesPageContainer from "../Page-Services/Container_ServicesPage";
 import WhyUsContainer from "../Page-About/WhyUs-Page/Container_WhyUs";
+import { AboutPage_1 } from "../Page-About/AboutPage";
 
-const HomePage = (props) => {
+const HomePage = ({ peoplsPhotos, buttonText, buttonColor, aboutPageContent }) => {
 	return <>
-		<AboutPageContainer />
+		<AboutPage_1
+			peoplsPhotos={peoplsPhotos}
+			buttonText={buttonText}
+			buttonColor={buttonColor}
+			aboutPageContent={aboutPageContent}
+		/>
 		<ServicesPageContainer />
 		<WhyUsContainer />
 	</>

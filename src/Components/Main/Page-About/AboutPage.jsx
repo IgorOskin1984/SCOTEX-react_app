@@ -6,8 +6,19 @@ import ClientsPageContainer from "../Page-Clients/Container_ClientsPage";
 import ContentComponent from "../../small_Components/Content-Component/ContentComponent";
 import WhyUsContainer from "./WhyUs-Page/Container_WhyUs";
 
+const AboutPage = ({ peoplsPhotos, buttonText, buttonColor, aboutPageContent }) => {
+	return <>
+		<AboutPage_1
+			peoplsPhotos={peoplsPhotos}
+			buttonText={buttonText}
+			buttonColor={buttonColor}
+			aboutPageContent={aboutPageContent}
+		/>
+		<WhyUsContainer />
+	</>
+}
 
-const AboutPage = (props) => {
+export const AboutPage_1 = (props) => {
 	return <>
 		<section className={s.aboutPage}>
 			<div className={s.container}>
