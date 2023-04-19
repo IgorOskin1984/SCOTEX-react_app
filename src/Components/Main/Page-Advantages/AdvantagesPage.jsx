@@ -5,8 +5,12 @@ const advantagesPageContentCreater = (arr) => {
 	return arr.map((item) => {
 		return (
 			<div key={item.value} className={s.contentItem}>
-				<h3 className={s.title}>{item.value}</h3>
-				<div className={s.text}>{item.text}</div>
+				<div className={s.contentItem_container}>
+					<h3 className={s.title}>{item.value}</h3>
+					<div className={s.text}>
+						<p>{item.text}</p>
+					</div>
+				</div>
 			</div>
 		)
 	})
