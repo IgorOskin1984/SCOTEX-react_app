@@ -8,15 +8,15 @@ const Testimonials = createSlice({
 	initialState: {
 		users: [
 			{
-				userImage: userImg_01,
+				avatar: userImg_01,
 				userName: 'John Doe',
 				userCompany: 'Company Name',
 				title: '"I recommend this agency"',
-				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.',
+				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.',
 				reiting: 5
 			},
 			{
-				userImage: userImg_02,
+				avatar: userImg_02,
 				userName: 'Alice Smith',
 				userCompany: 'Company Name',
 				title: '"The support is awesome"',
@@ -24,7 +24,7 @@ const Testimonials = createSlice({
 				reiting: 5
 			},
 			{
-				userImage: userImg_03,
+				avatar: userImg_03,
 				userName: 'Sophia Miller',
 				userCompany: 'Company Name',
 				title: '“A game changer for us”',

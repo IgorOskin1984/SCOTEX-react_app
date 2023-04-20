@@ -16,7 +16,7 @@ const renderStars = (quantity, star) => {
 	})
 }
 //*=============================================
-//*<div className={`${s.userImage} ${s[styleName]}`}>
+//*<div className={`${s.avatar} ${s[styleName]}`}>
 //* название класса выводится в {console.log(styleName)}
 //* отсюда название переписывалось вручную в Testimonials.module.css
 //*=============================================
@@ -24,19 +24,21 @@ const cartCreater = (arr, star) => {
 	return arr.map((user) => {
 		let styleName = `style${user.userName.replace(/\s/g, '')}`;
 		return (
-			<div key={user.userName} className={s.item}>
+			<div key={user.userName} className={s.user}>
 				<div className={s.header}>
 					{/*{console.log(styleName)}*/}
-					<div className={`${s.userImage} ${s[styleName]}`}>
-						<img src={user.userImage} alt="img" />
+					<div className={`${s.avatar} ${s[styleName]}`}>
+						<img src={user.avatar} alt="img" />
 					</div>
-					<div className={s.userData}>
+					<div className={s.body}>
 						<div className={s.userName}>{user.userName}</div>
 						<div className={s.userCompany}>{user.userCompany}</div>
 					</div>
 				</div>
 				<div className={s.title}>{user.title}</div>
-				<div className={s.text}>{user.text}</div>
+				<div className={s.text}>
+					<p>{user.text}</p>
+				</div>
 				<div className={s.stars}>
 					{renderStars(user.reiting, star)}
 				</div>
