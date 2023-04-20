@@ -18,10 +18,12 @@ const renderStars = (quantity, star) => {
 
 const cartCreater = (arr, star) => {
 	return arr.map((user) => {
+		let styleName = `style${user.userName.replace(/\s/g, '')}`;
 		return (
 			<div key={user.userName} className={s.item}>
 				<div className={s.header}>
-					<div className={s.userImage}>
+					{console.log(styleName)}
+					<div className={`${s.userImage} ${s[styleName]}`}>
 						<img src={user.userImage} alt="img" />
 					</div>
 					<div className={s.userData}>
@@ -34,7 +36,7 @@ const cartCreater = (arr, star) => {
 				<div className={s.stars}>
 					{renderStars(user.reiting, star)}
 				</div>
-			</div>
+			</div >
 		)
 	})
 }

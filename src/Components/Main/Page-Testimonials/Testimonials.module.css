@@ -40,8 +40,13 @@
 
 .userImage {
 	flex: 0 0 auto;
-
 }
+
+.styleJohnDoe {}
+
+.styleAliceSmith {}
+
+.styleSophiaMiller {}
 
 .userData {
 	align-self: center;
