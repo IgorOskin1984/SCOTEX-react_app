@@ -102,6 +102,11 @@
 		row-gap: 50px;
 	}
 
+	.content {
+		align-self: flex-start;
+		flex: 0 1 auto;
+	}
+
 	.title,
 	.text {
 		max-width: none;
