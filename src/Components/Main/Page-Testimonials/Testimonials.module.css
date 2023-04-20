@@ -40,13 +40,25 @@
 
 .userImage {
 	flex: 0 0 auto;
+	overflow: hidden;
 }
 
-.styleJohnDoe {}
+.userImage img {
+	max-width: 100%;
+	transform: scale(1.04);
+}
 
-.styleAliceSmith {}
+.styleJohnDoe {
+	border-radius: 0 50% 50% 50%;
+}
 
-.styleSophiaMiller {}
+.styleAliceSmith {
+	border-radius: 50% 0 50% 50%;
+}
+
+.styleSophiaMiller {
+	border-radius: 50% 50% 0 50%;
+}
 
 .userData {
 	align-self: center;

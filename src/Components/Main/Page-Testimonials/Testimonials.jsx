@@ -15,14 +15,18 @@ const renderStars = (quantity, star) => {
 		)
 	})
 }
-
+//*=============================================
+//*<div className={`${s.userImage} ${s[styleName]}`}>
+//* название класса выводится в {console.log(styleName)}
+//* отсюда название переписывалось вручную в Testimonials.module.css
+//*=============================================
 const cartCreater = (arr, star) => {
 	return arr.map((user) => {
 		let styleName = `style${user.userName.replace(/\s/g, '')}`;
 		return (
 			<div key={user.userName} className={s.item}>
 				<div className={s.header}>
-					{console.log(styleName)}
+					{/*{console.log(styleName)}*/}
 					<div className={`${s.userImage} ${s[styleName]}`}>
 						<img src={user.userImage} alt="img" />
 					</div>
