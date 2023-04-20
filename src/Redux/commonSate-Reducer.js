@@ -14,7 +14,8 @@ const commonSateSlice = createSlice({
 				ourServices: 'Our services',
 				contactUs: 'Contact us',
 				allServices: 'All services',
-				getInTouch: 'Get in touch'
+				getInTouch: 'Get in touch',
+				allPosts: 'All Posts'
 			},
 			buttonColors: {
 				blue: '#3D96F4',
@@ -44,6 +45,11 @@ const commonSateSlice = createSlice({
 				label: 'Testimonials',
 				title: 'See what our clients say',
 				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.'
+			},
+			blogPageContent: {
+				label: 'Blog',
+				title: 'Read our articles & news',
+				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.'
 			}
 		}
 	}

@@ -52,7 +52,7 @@ s.wrapper {
 .text {
 	font-size: 18px;
 	line-height: 1.5;
-	max-width: 500px;
+	max-width: 100%;
 }
 
 .text:not(:last-child) {

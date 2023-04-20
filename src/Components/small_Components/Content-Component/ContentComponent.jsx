@@ -21,9 +21,9 @@ const ContentComponent = (props) => {
 				? <h1 className={s.title}>{props.payload.title}</h1>
 				: <h1 className={s.titleWithBefore}>{props.payload.title}</h1>}
 			<div className={s.text}>
-				<p>
-					{props.payload.text}
-				</p>
+				{/*<p>*/}
+				{props.payload.text}
+				{/*</p>*/}
 			</div>
 		</div>
 	</>
