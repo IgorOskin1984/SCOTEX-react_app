@@ -1,3 +1,7 @@
+s.wrapper {
+	/*margin-bottom: 28px;*/
+}
+
 .label {
 	display: inline-block;
 	border: 1px solid rgba(129, 129, 139, 0.2);

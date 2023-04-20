@@ -13,7 +13,8 @@ const commonSateSlice = createSlice({
 				getStarted: 'Get started',
 				ourServices: 'Our services',
 				contactUs: 'Contact us',
-				allServices: 'All services'
+				allServices: 'All services',
+				getInTouch: 'Get in touch'
 			},
 			buttonColors: {
 				blue: '#3D96F4',
@@ -38,11 +39,12 @@ const commonSateSlice = createSlice({
 				label: 'why choose us',
 				title: 'We help great brandsscale with content marketing.',
 				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.'
+			},
+			testimonialsPageContent: {
+				label: 'Testimonials',
+				title: 'See what our clients say',
+				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.'
 			}
-			//aboutPageContent: {
-			//	title: 'Marketing solutions that grow your business.',
-			//	text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.'
-			//}
 		}
 	}
 })
