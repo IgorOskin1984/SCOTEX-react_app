@@ -2,6 +2,43 @@ import { Button } from "../../small_Components/Button/Button";
 import ContentComponent from "../../small_Components/Content-Component/ContentComponent"
 import s from './Testimonials.module.css'
 
+const renderStars = (quantity, star) => {
+	const stars = [];
+	let index = 'Testimonials'
+	for (let i = 0; i < quantity; i++) {
+		index += i
+		stars.push({ star, index });
+	}
+	return stars.map((el) => {
+		return (
+			<img key={el.index} src={el.star} alt="star" />
+		)
+	})
+}
+
+const cartCreater = (arr, star) => {
+	return arr.map((user) => {
+		return (
+			<div key={user.userName} className={s.item}>
+				<div className={s.header}>
+					<div className={s.userImage}>
+						<img src={user.userImage} alt="img" />
+					</div>
+					<div className={s.userData}>
+						<div className={s.userName}>{user.userName}</div>
+						<div className={s.userCompany}>{user.userCompany}</div>
+					</div>
+				</div>
+				<div className={s.title}>{user.title}</div>
+				<div className={s.text}>{user.text}</div>
+				<div className={s.stars}>
+					{renderStars(user.reiting, star)}
+				</div>
+			</div>
+		)
+	})
+}
+
 const Testimonials = (props) => {
 	return (
 		<>
@@ -14,22 +51,7 @@ const Testimonials = (props) => {
 						<Button buttonText={props.buttonText} />
 					</div>
 					<div className={s.items}>
-						<div className={s.item}>
-							<div className={s.header}>
-								<div className={s.image}>
-									<img src="" alt="img" />
-								</div>
-								<div className={s.userData}>
-									<div className={s.userName}>John Doe</div>
-									<div className={s.userCompany}>Company Name</div>
-								</div>
-							</div>
-							<div className={s.title}>"I recommend this agency"</div>
-							<div className={s.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero.</div>
-							<div className={s.stars}>
-								<img src="" alt="star" />
-							</div>
-						</div>
+						{cartCreater(props.usersCartData, props.star)}
 					</div>
 				</div>
 			</section>
