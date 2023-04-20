@@ -16,7 +16,7 @@ const routerCreater = (arr) => {
 		const headerLink = `/${title}`
 		const componentName = `${title[0].toUpperCase() + title.slice(1)}`;
 		return (
-			<Route path={headerLink} element={
+			<Route key={title} path={headerLink} element={
 				<Suspense fallback={<div>Загрузка...</div>}>
 					{renderComponent(componentName)}
 				</Suspense>

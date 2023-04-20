@@ -67,7 +67,7 @@
 	}
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 650px) {
 	.content {
 		grid-template-columns: auto;
 	}
