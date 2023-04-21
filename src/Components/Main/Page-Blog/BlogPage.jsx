@@ -8,9 +8,7 @@ const BlogPage = (props) => {
 		<section className={s.blogPage}>
 			<div className={s.container}>
 				<div className={s.content}>
-					{/*<div className={s.contentBody}>*/}
 					<ContentComponent payload={props.blogPageContent} />
-					{/*</div>*/}
 					<Button buttonText={props.buttonText} />
 				</div>
 				<div className={s.items}>

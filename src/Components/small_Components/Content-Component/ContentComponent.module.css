@@ -79,10 +79,10 @@ s.wrapper {
 
 @media (min-width:768px) {
 	.title {
-		max-width: 520px;
+		/*max-width: 520px;*/
 	}
 
 	.text {
-		max-width: 500px;
+		/*max-width: 500px;*/
 	}
 }
