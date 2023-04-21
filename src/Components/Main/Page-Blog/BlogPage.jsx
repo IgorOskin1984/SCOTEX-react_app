@@ -9,8 +9,10 @@ const cartCreater = (arr) => {
 		const key = cart.title
 		return (
 			<article key={key} className={s.cart}>
-				<div className={s.image}>
-					<img src={cart.image} alt="image" />
+				<div className={s.header}>
+					<div className={s.image}>
+						<img src={cart.image} alt="image" />
+					</div>
 					<div className={s.label}>
 						<NavLink to={'/#'}>{cart.label}</NavLink>
 					</div>
