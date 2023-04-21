@@ -6,6 +6,7 @@ import servicesPageSliceReducer from "./servicesPage-Reducer";
 import whyUsPageSliceReducer from "./whyUs-Reducer";
 import AdvantagesPageSliceReducer from './advantagesPage-Reducer';
 import testimonialsPageSliceReducer from './Testimonials-Reducer';
+import blogPageSliceReducer from './BlogPage-Reducer';
 
 //const rootReducer = combineReducers({
 //	header: todosSliceReducer
@@ -20,6 +21,7 @@ export const store = configureStore({
 		servicesPage: servicesPageSliceReducer,
 		whyUsPage: whyUsPageSliceReducer,
 		advantagesPage: AdvantagesPageSliceReducer,
-		testimonialsPage: testimonialsPageSliceReducer
+		testimonialsPage: testimonialsPageSliceReducer,
+		blogPage: blogPageSliceReducer
 	}
 })

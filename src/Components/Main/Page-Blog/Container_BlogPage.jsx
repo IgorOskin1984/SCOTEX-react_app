@@ -4,7 +4,8 @@ import BlogPage from "./BlogPage";
 const mapStateToProps = (state) => {
 	return {
 		buttonText: state.commonSate.buttons.buttonTexts.allPosts,
-		blogPageContent: state.commonSate.content.blogPageContent
+		blogPageContent: state.commonSate.content.blogPageContent,
+		cartsPayload: state.blogPage.carts
 	}
 }
 
