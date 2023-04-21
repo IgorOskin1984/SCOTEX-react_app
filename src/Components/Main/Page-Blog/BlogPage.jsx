@@ -35,14 +35,14 @@ const cartCreater = (arr) => {
 const BlogPage = (props) => {
 	return (
 		<section className={s.blogPage}>
-			<div className={s.items}>
-				{cartCreater(props.cartsPayload)}
-			</div>
 			<div className={s.container}>
 				<div className={s.content}>
 					<ContentComponent payload={props.blogPageContent} />
 					<Button buttonText={props.buttonText} />
 				</div>
+			</div>
+			<div className={s.items}>
+				{cartCreater(props.cartsPayload)}
 			</div>
 		</section>
 	)

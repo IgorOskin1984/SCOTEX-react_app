@@ -8,7 +8,6 @@ import BlogPageContaimer from "../Page-Blog/Container_BlogPage";
 
 const HomePage = ({ peoplsPhotos, buttonText, buttonColor, aboutPageContent }) => {
 	return <>
-		<BlogPageContaimer />
 		<AboutPage_1
 			peoplsPhotos={peoplsPhotos}
 			buttonText={buttonText}
@@ -19,6 +18,7 @@ const HomePage = ({ peoplsPhotos, buttonText, buttonColor, aboutPageContent }) =
 		<WhyUsContainer />
 		<AdvantagesPageContainer />
 		<TestimonialsContainer />
+		<BlogPageContaimer />
 	</>
 }
 
