@@ -12,9 +12,11 @@
 	align-items: center;
 }
 
-.content {
+.colums {
 	flex: 0 1 50%;
 }
+
+.content {}
 
 .title {
 	color: #FFFFFF;
