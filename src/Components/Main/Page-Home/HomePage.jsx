@@ -9,7 +9,6 @@ import ReadyToStartContainer from "../Page-ReadyToStart/Container_ReadyToStart";
 
 const HomePage = ({ peoplsPhotos, buttonText, buttonColor, aboutPageContent }) => {
 	return <>
-		<ReadyToStartContainer />
 		<AboutPage_1
 			peoplsPhotos={peoplsPhotos}
 			buttonText={buttonText}
@@ -21,6 +20,7 @@ const HomePage = ({ peoplsPhotos, buttonText, buttonColor, aboutPageContent }) =
 		<AdvantagesPageContainer />
 		<TestimonialsContainer />
 		<BlogPageContaimer />
+		<ReadyToStartContainer />
 	</>
 }
 
