@@ -14,6 +14,7 @@
 
 .colums {
 	flex: 0 1 50%;
+	text-align: center;
 }
 
 .content {}
@@ -32,11 +33,13 @@
 .text {
 	font-size: 16px;
 	line-height: 1.5;
+	max-width: 340px;
+	display: inline-block;
 }
 
 .buttons {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	column-gap: 32px;
 }
 
@@ -57,6 +60,7 @@
 		flex-direction: column;
 		row-gap: 32px;
 		padding: 35px 40px;
+		align-items: stretch;
 	}
 }
 
@@ -64,13 +68,15 @@
 	.container {
 		padding: 35px 20px;
 	}
+
+	.buttons {
+		align-items: stretch;
+		flex-direction: column;
+		row-gap: 20px;
+	}
 }
 
 @media (max-width: 375px) {
-	.container {
-		row-gap: 20px;
-	}
-
 	.buttons {
 		gap: 10px;
 	}
