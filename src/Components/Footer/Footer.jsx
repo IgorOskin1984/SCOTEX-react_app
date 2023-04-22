@@ -6,15 +6,25 @@ import { LiNavLink } from "../Header/Menu_link/MenuLink";
 
 const Footer = (props) => {
 
-	//const navItemcreater = (arr) => {
-	//	return arr.map(() => {
-	//		if (!title) {
-	//			return console.error('error at initial array headerSlice');
-	//		}
-	//		let newtitle = title[0].toUpperCase() + title.slice(1);
-	//		return <LiNavLink key={title} linkPath={title} title={newtitle} />
-	//	})
-	//}
+	const growfySocialsCreater = (arr) => {
+		return arr.map((item) => {
+			return (
+				<NavLink key={item.key} className={s.socialItem} to={item.link}>
+					<img src={item.icon} alt={item.key} />
+				</NavLink>
+			)
+		})
+	}
+
+	const navItemСreater = (arr) => {
+		return arr.map((title) => {
+			if (!title) {
+				return console.error('some error');
+			}
+			let newtitle = title[0].toUpperCase() + title.slice(1);
+			return <LiNavLink className={s.pagesColumnLinksItem} key={title} linkPath={title} title={newtitle} />
+		})
+	}
 
 	return (
 		<div className={s.footer}>
@@ -31,45 +41,15 @@ const Footer = (props) => {
 							</p>
 						</div>
 						<div className={s.growfySocial}>
-							<NavLink to={'https://www.linkedin.com/feed/'}>
-								<img src="" alt="linkedin" />
-							</NavLink>
-							<NavLink to={'https://twitter.com/?lang=ru'}>
-								<img src="" alt="twitter" />
-							</NavLink>
-							<NavLink to={'https://www.facebook.com/'}>
-								<img src="" alt="facebook" />
-							</NavLink>
-							<NavLink to={'https://www.youtube.com/'}>
-								<img src="" alt="youtube" />
-							</NavLink>
-							<NavLink to={'https://www.instagram.com/'}>
-								<img src="" alt="instagram" />
-							</NavLink>
+							{/* NavLinks */}
+							{growfySocialsCreater(props.growfySocialIcons)}
 						</div>
 					</div>
 
 					<div className={s.column + ' ' + s.pages}>
-						<div className={s.title}>Pages</div>
+						<div className={s.title}>{props.pagesColumnTitle}</div>
 						<nav className={s.list}>
-							<li className={s.item}>
-								<NavLink to={'/home'}>Home</NavLink>
-							</li>
-							<li className={s.item}>
-								<NavLink to={'/about'}>About</NavLink>
-							</li>
-							<li className={s.item}>
-								<NavLink to={'/services'}>Services</NavLink>
-							</li>
-							<li className={s.item}>
-								<NavLink to={'/packages'}>Packages</NavLink>
-							</li>
-							<li className={s.item}>
-								<NavLink to={'/blog'}>Blog</NavLink>
-							</li>
-							<li className={s.item}>
-								<NavLink to={'/Password protected'}>Contact</NavLink>
-							</li>
+							{navItemСreater(props.pagesColumnLinks)}
 						</nav>
 
 					</div>

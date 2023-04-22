@@ -3,3 +3,11 @@
 }
 
 .container {}
+
+.title {
+	color: red;
+}
+
+.pagesColumnLinksItem {
+	color: red;
+}

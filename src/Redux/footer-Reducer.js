@@ -9,7 +9,38 @@ const footerPageSlice = createSlice({
 	name: 'aboutPageSliceName',
 	initialState: {
 		growfyColumn: {
-			text: 'Growfy is a template highly suitable for modern marketing agencies, digital studios, startups and businesses. The design is made in the dark style, which makes the site memorable and you can easily adapt it to your brand.'
+			text: 'Growfy is a template highly suitable for modern marketing agencies, digital studios, startups and businesses. The design is made in the dark style, which makes the site memorable and you can easily adapt it to your brand.',
+			socialIcons: [
+				{
+					link: 'https://www.linkedin.com/feed/',
+					icon: linkedin,
+					key: 'linkedin'
+				},
+				{
+					link: 'https://twitter.com/?lang=ru',
+					icon: twitter,
+					key: 'twitter'
+				},
+				{
+					link: 'https://www.facebook.com/',
+					icon: facebook,
+					key: 'facebook'
+				},
+				{
+					link: 'https://www.youtube.com/',
+					icon: youtube,
+					key: 'youtube'
+				},
+				{
+					link: 'https://www.instagram.com/',
+					icon: instagram,
+					key: 'instagram'
+				}
+			]
+		},
+		pagesColumn: {
+			title: 'Pages',
+			links: ['home', 'about', 'services', 'packages', 'blog', 'contact']
 		}
 	},
 	reducers: {}
