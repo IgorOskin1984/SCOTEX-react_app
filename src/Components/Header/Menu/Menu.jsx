@@ -1,6 +1,6 @@
 import React from "react";
 import s from './Menu.module.css'
-import { MenuLink } from "../Menu_link/MenuLink";
+import { LiNavLink } from "../Menu_link/MenuLink";
 
 
 const menuLinkCreater = (arr) => arr.map((title) => {
@@ -10,7 +10,7 @@ const menuLinkCreater = (arr) => arr.map((title) => {
 	let newtitle = title[0].toUpperCase() + title.slice(1);
 
 	return (
-		<MenuLink key={title} linkPath={title} title={newtitle} />
+		<LiNavLink key={title} linkPath={title} title={newtitle} />
 	)
 })
 

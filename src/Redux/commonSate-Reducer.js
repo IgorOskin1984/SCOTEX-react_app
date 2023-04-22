@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import logoImg from './../images/logo.svg'
 import c01 from './../images/icons/clients/01.svg.svg'
 import c02 from './../images/icons/clients/02.svg.svg'
 import c03 from './../images/icons/clients/03.svg.svg'
@@ -8,6 +9,7 @@ import c05 from './../images/icons/clients/05.svg.svg'
 const commonSateSlice = createSlice({
 	name: 'commonSateSliceName',
 	initialState: {
+		logo: logoImg,
 		buttons: {
 			buttonTexts: {
 				getStarted: 'Get started',
