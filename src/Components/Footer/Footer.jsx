@@ -22,7 +22,7 @@ const Footer = (props) => {
 				return console.error('some error');
 			}
 			let newtitle = title[0].toUpperCase() + title.slice(1);
-			return <LiNavLink className={s.pagesColumnLinksItem} key={title} linkPath={title} title={newtitle} />
+			return <LiNavLink liClassName={s.pagesColumnItem} className={s.pagesColumnLinksItem} key={title} linkPath={title} title={newtitle} />
 		})
 	}
 
