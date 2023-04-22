@@ -74,7 +74,7 @@ const Footer = (props) => {
 						<div className={s.title}>Subscribe to our newsletter</div>
 						<div className={s.text}>Lorem ipsum dolor sit am consectetur adipiscing</div>
 						<div className={s.actions}>
-							<input required type="email" placeholder="Enter your email" />
+							<input className={s.input} required type="email" placeholder="Enter your email" />
 							<Button buttonText={props.buttonText} />
 						</div>
 
@@ -83,7 +83,7 @@ const Footer = (props) => {
 			</div>
 
 			<div className={s.bottomFooter}>
-				<div className={s.container}>
+				<div className={s.bottomFootercontainer}>
 					<div className={s.copy}>
 						© 2022
 					</div>

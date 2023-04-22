@@ -1,16 +1,24 @@
 .footer {
 	padding-top: 100px;
+
 }
 
 .mainFooter {
 	display: flex;
 	flex-direction: column;
+	padding-bottom: 160px;
 }
 
 .container {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: minmax(auto, 378px) auto auto minmax(auto, 378px);
 	column-gap: 64px;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	row-gap: 32px;
 }
 
 .title {
@@ -21,15 +29,80 @@
 	line-height: 1.20;
 }
 
-.pagesColumnItem {
+/*========================================================================================================================================================*/
 
-	color: yellow;
+.growfyText {
+	font-size: 16px;
+	line-height: 1.5;
 }
 
-.pagesColumnLinksItem {
-	color: green;
+.growfySocial {
+	display: flex;
+	column-gap: 16px;
 }
 
-.utilityColumnListItem {
-	color: orange;
+.socialItem {
+	flex: 0 0 36px;
+	height: 36px;
+	border: 1px solid rgba(129, 129, 139, 0.9);
+	border-radius: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.socialItem:hover {
+	border: 2px solid rgba(224, 203, 203, 0.9);
+}
+
+.list {
+	display: grid;
+	row-gap: 24px;
+}
+
+.pagesColumnLinksItem,
+.utilityColumnListItem,
+.text,
+.input {
+	font-size: 16px;
+	line-height: 1.62;
+	color: #9C9C9C;
+}
+
+.pagesColumnLinksItem:hover,
+.utilityColumnListItem:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/*========================================================================================================================================================*/
+
+.actions {
+	display: flex;
+	column-gap: 16px;
+}
+
+.input {
+	border: 1px solid rgba(129, 129, 139, 0.3);
+	border-radius: 50px;
+	background-color: transparent;
+	text-align: center;
+}
+
+/*========================================================================================================================================================*/
+
+.bottomFooter {
+	border: 1px solid rgba(129, 129, 139, 0.2);
+}
+
+.bottomFootercontainer {
+	padding: 45px;
+	display: flex;
+	justify-content: center;
+}
+
+.copy {
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.57;
 }
