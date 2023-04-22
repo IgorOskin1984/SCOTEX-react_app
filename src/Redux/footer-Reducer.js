@@ -41,6 +41,35 @@ const footerPageSlice = createSlice({
 		pagesColumn: {
 			title: 'Pages',
 			links: ['home', 'about', 'services', 'packages', 'blog', 'contact']
+		},
+		utilityColumn: {
+			title: 'Utility pages',
+			links: [
+				{
+					link: '/#',
+					name: 'Instructions',
+				},
+				{
+					link: '/#',
+					name: 'Style guide',
+				},
+				{
+					link: '/#',
+					name: 'Licenses',
+				},
+				{
+					link: '/#',
+					name: 'Changelog',
+				},
+				{
+					link: '/#',
+					name: '404 Not found',
+				},
+				{
+					link: '/#',
+					name: 'Password protected',
+				},
+			]
 		}
 	},
 	reducers: {}

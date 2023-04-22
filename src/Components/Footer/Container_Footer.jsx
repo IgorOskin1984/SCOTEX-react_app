@@ -7,7 +7,13 @@ const mapStateToProps = (state) => {
 		growfyText: state.footerPage.growfyColumn.text,
 		growfySocialIcons: state.footerPage.growfyColumn.socialIcons,
 		pagesColumnTitle: state.footerPage.pagesColumn.title,
-		pagesColumnLinks: state.footerPage.pagesColumn.links
+		pagesColumnLinks: state.footerPage.pagesColumn.links,
+
+		utilityColumnTitle: state.footerPage.utilityColumn.title,
+		utilityColumnLinks: state.footerPage.utilityColumn.links,
+
+		buttonText: state.commonSate.buttons.buttonTexts.subscribe
+
 	}
 }
 

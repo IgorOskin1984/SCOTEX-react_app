@@ -16,7 +16,7 @@ const Footer = (props) => {
 		})
 	}
 
-	const navItemСreater = (arr) => {
+	const pagesNavItemСreater = (arr) => {
 		return arr.map((title) => {
 			if (!title) {
 				return console.error('some error');
@@ -26,6 +26,15 @@ const Footer = (props) => {
 		})
 	}
 
+	const utilityColumnLinkCreater = (arr) => {
+		return arr.map((item) => {
+			return (
+				<li>
+					<NavLink key={item.name} className={s.utilityColumnListItem} to={item.link}>{item.name}</NavLink>
+				</li>
+			)
+		})
+	}
 	return (
 		<div className={s.footer}>
 
@@ -49,42 +58,23 @@ const Footer = (props) => {
 					<div className={s.column + ' ' + s.pages}>
 						<div className={s.title}>{props.pagesColumnTitle}</div>
 						<nav className={s.list}>
-							{navItemСreater(props.pagesColumnLinks)}
+							{pagesNavItemСreater(props.pagesColumnLinks)}
 						</nav>
-
 					</div>
 
-					<div className={s.column}>
-						<div className={s.title}>Utility pages</div>
+					<div className={s.column + ' ' + s.utility}>
+						<div className={s.title}>{props.utilityColumnTitle}</div>
 						<nav className={s.list}>
-							<li className={s.item}>
-								<NavLink to={'/instructions'}>Instructions</NavLink>
-							</li>
-							<li className={s.item}>
-								<NavLink to={'/styleguide'}>Style guide</NavLink>
-							</li>
-							<li className={s.item}>
-								<NavLink to={'/licenses'}>Licenses</NavLink>
-							</li>
-							<li className={s.item}>
-								<NavLink to={'/changelog'}>Changelog</NavLink>
-							</li>
-							<li className={s.item}>
-								<NavLink to={'/error'}>404 Not found</NavLink>
-							</li>
-							<li className={s.item}>
-								<NavLink to={'/passwordprotected'}>Password protected</NavLink>
-							</li>
+							{utilityColumnLinkCreater(props.utilityColumnLinks)}
 						</nav>
 					</div>
-
 
 					<div className={s.column}>
 						<div className={s.title}>Subscribe to our newsletter</div>
 						<div className={s.text}>Lorem ipsum dolor sit am consectetur adipiscing</div>
 						<div className={s.actions}>
 							<input required type="email" placeholder="Enter your email" />
-							<Button />
+							<Button buttonText={props.buttonText} />
 						</div>
 
 					</div>
