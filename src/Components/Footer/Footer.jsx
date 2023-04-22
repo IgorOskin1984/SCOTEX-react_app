@@ -6,7 +6,7 @@ import { LiNavLink } from "../Header/Menu_link/MenuLink";
 
 const Column = ({ columnClassName, title, func }) => {
 	return (
-		<div className={s.column + ' ' + columnClassName}>
+		<div key={title} className={s.column + ' ' + columnClassName}>
 			<div className={s.title}>{title}</div>
 			<nav className={s.list}>
 				{func}
@@ -40,7 +40,7 @@ const Footer = (props) => {
 	const utilityColumnLinkCreater = (arr) => {
 		return arr.map((item) => {
 			return (
-				<li>
+				<li key={item.name} >
 					<NavLink key={item.name} className={s.utilityColumnListItem} to={item.link}>{item.name}</NavLink>
 				</li>
 			)
@@ -67,6 +67,7 @@ const Footer = (props) => {
 					</div>
 
 					<Column columnClassName={s.pages} title={props.pagesColumnTitle} func={pagesNavItemСreater(props.pagesColumnLinks)} />
+
 					<Column columnClassName={s.utility} title={props.utilityColumnTitle} func={utilityColumnLinkCreater(props.utilityColumnLinks)} />
 
 					<div className={s.column}>
