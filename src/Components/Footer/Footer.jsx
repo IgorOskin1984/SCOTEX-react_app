@@ -4,6 +4,17 @@ import { NavLink } from "react-router-dom";
 import { Button } from "../small_Components/Button/Button";
 import { LiNavLink } from "../Header/Menu_link/MenuLink";
 
+const Column = ({ columnClassName, title, func }) => {
+	return (
+		<div className={s.column + ' ' + columnClassName}>
+			<div className={s.title}>{title}</div>
+			<nav className={s.list}>
+				{func}
+			</nav>
+		</div>
+	)
+}
+
 const Footer = (props) => {
 
 	const growfySocialsCreater = (arr) => {
@@ -55,19 +66,8 @@ const Footer = (props) => {
 						</div>
 					</div>
 
-					<div className={s.column + ' ' + s.pages}>
-						<div className={s.title}>{props.pagesColumnTitle}</div>
-						<nav className={s.list}>
-							{pagesNavItemСreater(props.pagesColumnLinks)}
-						</nav>
-					</div>
-
-					<div className={s.column + ' ' + s.utility}>
-						<div className={s.title}>{props.utilityColumnTitle}</div>
-						<nav className={s.list}>
-							{utilityColumnLinkCreater(props.utilityColumnLinks)}
-						</nav>
-					</div>
+					<Column columnClassName={s.pages} title={props.pagesColumnTitle} func={pagesNavItemСreater(props.pagesColumnLinks)} />
+					<Column columnClassName={s.utility} title={props.utilityColumnTitle} func={utilityColumnLinkCreater(props.utilityColumnLinks)} />
 
 					<div className={s.column}>
 						<div className={s.title}>Subscribe to our newsletter</div>
