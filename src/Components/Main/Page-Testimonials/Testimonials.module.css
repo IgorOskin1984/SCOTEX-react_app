@@ -8,6 +8,10 @@
 	justify-content: space-between;
 }
 
+.content :first-child {
+	flex: 0 1 60%;
+}
+
 .content :last-child {
 	align-self: flex-end;
 }
@@ -27,7 +31,6 @@
 	display: flex;
 	flex-direction: column;
 	row-gap: 34px;
-	/*justify-content: space-around;*/
 
 	background: rgba(129, 129, 139, 0.1);
 	border-radius: 30px;

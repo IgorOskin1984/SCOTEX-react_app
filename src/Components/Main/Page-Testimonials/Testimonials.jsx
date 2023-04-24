@@ -53,9 +53,7 @@ const Testimonials = (props) => {
 			<section className={s.testimonials}>
 				<div className={s.container}>
 					<div className={s.content}>
-						<div>
-							<ContentComponent payload={props.testimonialsPageContent} />
-						</div>
+						<ContentComponent payload={props.testimonialsPageContent} />
 						<Button buttonText={props.buttonText} />
 					</div>
 					<div className={s.items}>

@@ -8,9 +8,9 @@ import FooterContainer from './Components/Footer/Container_Footer';
 function App() {
 	return (
 		<div className={s.wrapper}>
-			<FooterContainer />
 			<HeaderContainer />
 			<MainContainer />
+			<FooterContainer />
 		</div>
 	);
 }
