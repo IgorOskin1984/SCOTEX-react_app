@@ -15,18 +15,20 @@ const SubscribeFormValidate = (values) => {
 	return errors;
 }
 
-const onFormSubmitFunction = (values, { setSubmitting }) => {
-	alert(JSON.stringify(values, null, 2));
-	setSubmitting(false);
-}
 
 const FooterSubscribeForm = (props) => {
+
+	const submitFunction = (values, { setSubmitting }) => {
+		alert(JSON.stringify(values, null, 2));
+		setSubmitting(false);
+	}
+
 	return (
 		<Formik
 			className={s.formik}
 			initialValues={{ email: '', password: '' }}
 			validate={SubscribeFormValidate}
-			onSubmit={onFormSubmitFunction}
+			onSubmit={submitFunction}
 		>
 			{({ isSubmitting }) => (
 				<Form className={s.subcribe}>
