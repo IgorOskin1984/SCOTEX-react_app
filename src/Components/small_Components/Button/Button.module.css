@@ -2,6 +2,7 @@
 	display: inline-block;
 	text-align: center;
 
+	max-height: 54px;
 	padding: 16px 30px;
 	letter-spacing: 2px;
 	font-weight: 500;

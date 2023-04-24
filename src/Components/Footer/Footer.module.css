@@ -78,7 +78,7 @@
 
 /*========================================================================================================================================================*/
 
-.actions {
+.subcribe {
 	display: flex;
 	gap: 16px;
 }
@@ -91,10 +91,29 @@
 	color: #fff;
 	width: 100%;
 	height: 54px;
+	font-size: 14px;
+	line-height: 1.5;
 }
 
 .input::placeholder {
 	color: #999999;
+}
+
+.formik {
+	padding-top: 100px;
+}
+
+.subcribeBody {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	/*align-items: center;*/
+}
+
+.error {
+	flex: 0 0 auto;
+	color: rgb(219, 165, 17);
+	align-self: center;
 }
 
 /*========================================================================================================================================================*/
@@ -136,6 +155,10 @@
 	.bottomFootercontainer {
 		padding: 35px;
 	}
+
+	.input {
+		padding: 0 15px;
+	}
 }
 
 @media (max-width: 767.98px) {
@@ -159,7 +182,7 @@
 }
 
 @media (max-width: 479.98px) {
-	.actions {
+	.subcribe {
 		flex-direction: column;
 	}
 }

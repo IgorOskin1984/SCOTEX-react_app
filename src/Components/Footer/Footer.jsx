@@ -1,8 +1,10 @@
 import React from "react";
 import s from './Footer.module.css'
 import { NavLink } from "react-router-dom";
-import { Button } from "../small_Components/Button/Button";
 import { LiNavLink } from "../Header/Menu_link/MenuLink";
+import FooterSubscribeForm from "./FooterSubscribeForm/FooterSubscribeForm";
+
+
 
 const Column = ({ columnClassName, title, func }) => {
 	return (
@@ -73,12 +75,9 @@ const Footer = (props) => {
 					<div className={s.column}>
 						<div className={s.title}>Subscribe to our newsletter</div>
 						<div className={s.text}>Lorem ipsum dolor sit am consectetur adipiscing</div>
-						<div className={s.actions}>
-							<input className={s.input} required type="email" placeholder="Enter your email" />
-							<Button buttonText={props.buttonText} />
-						</div>
-
+						<FooterSubscribeForm />
 					</div>
+
 				</div>
 			</div>
 
