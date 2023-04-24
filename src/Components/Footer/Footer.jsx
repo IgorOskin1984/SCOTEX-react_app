@@ -72,7 +72,7 @@ const Footer = (props) => {
 
 					<Column columnClassName={s.utility} title={props.utilityColumnTitle} func={utilityColumnLinkCreater(props.utilityColumnLinks)} />
 
-					<div className={s.column}>
+					<div className={s.column + ' ' + s.subscribe}>
 						<div className={s.title}>Subscribe to our newsletter</div>
 						<div className={s.text}>Lorem ipsum dolor sit am consectetur adipiscing</div>
 						<FooterSubscribeForm />
