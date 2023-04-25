@@ -1,5 +1,12 @@
 .listItem {}
 
+.isActive {
+	color: #3D96F4;
+	font-size: 16px;
+	line-height: 1.62;
+	font-weight: 500;
+}
+
 .listLink {
 	display: block;
 	color: #FFFFFF;

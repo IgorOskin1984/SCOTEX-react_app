@@ -16,10 +16,12 @@ export const LiNavLink = (props) => {
 			<li onClick={onMenuLinkClick} className={s.listItem + ' ' + props.liClassName}>
 				<NavLink
 					to={`/${props.linkPath}`}
-					className={s.listLink + ' ' + props.className} >
+					className={({ isActive }) => isActive ? s.isActive : s.listLink + ' ' + props.className}
+				>
+
 					{props.title}
 				</NavLink>
-			</li>
+			</li >
 		</>
 	)
 }
