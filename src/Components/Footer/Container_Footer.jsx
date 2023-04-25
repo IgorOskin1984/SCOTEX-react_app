@@ -2,6 +2,7 @@ import { connect } from "react-redux";
 import Footer from "./Footer";
 
 const mapStateToProps = (state) => {
+	console.log(state.subscribeEmail);
 	return {
 		logo: state.commonSate.logo,
 		growfyText: state.footerPage.growfyColumn.text,

@@ -2,6 +2,8 @@ import React from "react";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import styleButton from './../../small_Components/Button/Button.module.css'
 import s from './../Footer.module.css'
+import { useDispatch } from "react-redux";
+import { addEmailAC } from "../../../Redux/subscribe-Reducer";
 
 const SubscribeFormValidate = (values) => {
 	const errors = {};
@@ -16,17 +18,24 @@ const SubscribeFormValidate = (values) => {
 }
 
 
-const FooterSubscribeForm = (props) => {
+const FooterSubscribeForm = ({ addEmailAC }, ...restProps) => {
 
-	const submitFunction = (values, { setSubmitting }) => {
-		alert(JSON.stringify(values, null, 2));
+	const dispatch = useDispatch();
+
+	const submitFunction = (values, { setSubmitting, resetForm }) => {
+		dispatch(addEmailAC(values))
+
+		resetForm()
+		alert(JSON.stringify(values, null, 2) + '\nForm submitting success');
+
 		setSubmitting(false);
 	}
 
 	return (
 		<Formik
 			className={s.formik}
-			initialValues={{ email: '', password: '' }}
+			initialValues={{ email: '' }}
+			//initialValues={{ email: '', password: '' }}
 			validate={SubscribeFormValidate}
 			onSubmit={submitFunction}
 		>
