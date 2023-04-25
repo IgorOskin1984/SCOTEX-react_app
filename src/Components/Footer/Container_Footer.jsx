@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import Footer from "./Footer";
-import { addEmailAC } from "../../Redux/subscribe-Reducer";
+//import { addEmailAC } from "../../Redux/subscribe-Reducer";
 
 const mapStateToProps = (state) => {
 	console.log(state.subscribeEmail);
@@ -19,13 +19,13 @@ const mapStateToProps = (state) => {
 	}
 }
 
-const mapDispatchToProps = (dispatch) => {
-	return {
-		onClickAddEmailToState: (email) => {
-			dispatch(addEmailAC(email))
-		}
-	}
-}
+//const mapDispatchToProps = (dispatch) => {
+//	return {
+//		onClickAddEmailToState: (email) => {
+//			dispatch(addEmailAC(email))
+//		}
+//	}
+//}
 
-const FooterContainer = connect(mapStateToProps, mapDispatchToProps)(Footer);
+const FooterContainer = connect(mapStateToProps, null)(Footer);
 export default FooterContainer;

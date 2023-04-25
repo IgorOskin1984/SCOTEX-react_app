@@ -75,7 +75,7 @@ const Footer = (props) => {
 					<div className={s.column + ' ' + s.subscribe}>
 						<div className={s.title}>Subscribe to our newsletter</div>
 						<div className={s.text}>Lorem ipsum dolor sit am consectetur adipiscing</div>
-						<FooterSubscribeForm addEmail={props.onClickAddEmailToState} />
+						<FooterSubscribeForm />
 					</div>
 
 				</div>
