@@ -27,5 +27,6 @@ export const store = configureStore({
 		blogPage: blogPageSliceReducer,
 		footerPage: footerPageSliceReducer,
 		subscribeEmail: subscribeSliceReducer
-	}
+	},
+	devTools: true,
 })
