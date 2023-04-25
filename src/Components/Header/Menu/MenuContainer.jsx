@@ -1,5 +1,5 @@
-import { Menu } from "./Menu";
-import { showMenuTitlesAC } from "./../../../Redux/header-Reducer";
+import Menu from "./Menu";
+import { showMenuTitlesAC } from "../../../Redux/old-header-Reducer";
 import { connect } from "react-redux";
 
 //class MenuContainer extends React.Component {

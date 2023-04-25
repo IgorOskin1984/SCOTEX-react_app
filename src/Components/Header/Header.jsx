@@ -4,8 +4,8 @@ import s from './Header.module.css'
 import { Button } from "../small_Components/Button/Button";
 import { Cart } from "./Cart/Cart";
 import MenuContainer from "./Menu/MenuContainer";
-import { BurgerContainer } from "./Burger/BurgerContainer";
 import { NavLink } from "react-router-dom";
+import { Burger } from "./Burger/Burger";
 
 
 
@@ -22,7 +22,7 @@ const Header = (props) => {
 				<Cart />
 				<Button buttonText={props.buttonText.getStarted} />
 
-				<BurgerContainer />
+				<Burger />
 			</div>
 		</div>
 	)
