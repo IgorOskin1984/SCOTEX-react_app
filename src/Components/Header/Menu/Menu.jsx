@@ -14,7 +14,7 @@ const menuLinkCreater = (arr) => arr.map((title) => {
 	)
 })
 
-const Menu = (props) => {
+export const Menu = (props) => {
 	return (
 		<>
 			<nav className={s.menu}>
@@ -28,5 +28,3 @@ const Menu = (props) => {
 		</>
 	)
 }
-
-export default Menu;
