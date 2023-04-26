@@ -8,12 +8,13 @@
 	line-height: 1.62;
 }
 
-.pageLink:hover .body {
+.active:hover .body {
 	position: absolute;
 	left: -10px;
+	display: block;
 }
 
-.pageLink:not(:hover) .body {
+.body {
 	display: none;
 }
 
@@ -33,3 +34,41 @@
 }
 
 .hederPagesLinks {}
+
+.active {}
+
+@media (max-width: 768px) {
+
+	.pageLink,
+	.body {
+		width: 100%;
+	}
+
+	.active:hover .body {
+		position: unset;
+		left: -10px;
+		display: block;
+	}
+
+	.items {
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		padding-bottom: 0;
+	}
+}
+
+@media (max-width: 767.98px) {
+
+	.title {
+		font-size: 32px;
+	}
+
+	.items li a {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.items {
+		grid-template-columns: 1fr;
+	}
+}
