@@ -1,8 +1,8 @@
 import React from "react";
-import s from './ReadyToStart.module.css'
+import s from './ContactPage.module.css'
 import { Button } from "../../small_Components/Button/Button";
 
-const ReadyToStart = (props) => {
+const ContactPage = (props) => {
 	return (
 		<>
 			<section className={s.readyToStart}>
@@ -26,4 +26,4 @@ const ReadyToStart = (props) => {
 		</>
 	)
 }
-export default ReadyToStart;
+export default ContactPage;

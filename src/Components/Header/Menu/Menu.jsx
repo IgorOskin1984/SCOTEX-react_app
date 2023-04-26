@@ -9,11 +9,13 @@ const menuLinkCreater = (arr, props) => arr.map((title) => {
 		return console.error('error at initial array headerSlice');
 	}
 	let newtitle = title[0].toUpperCase() + title.slice(1);
-
 	switch (newtitle) {
 		case 'Pages':
 			return (
-				<SelectPage key={title} title={newtitle} links={props.links} />
+				<SelectPage key={title}
+					title={newtitle}
+					links={props.links}
+				/>
 			)
 		default:
 			return (

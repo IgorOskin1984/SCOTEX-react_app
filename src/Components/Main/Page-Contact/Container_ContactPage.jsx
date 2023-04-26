@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import ReadyToStart from "./ReadyToStart";
+import ContactPage from "./ContactPage";
 
 const mapStateToProps = (state) => {
 	return {
@@ -9,6 +9,6 @@ const mapStateToProps = (state) => {
 	}
 }
 
-const ReadyToStartContainer = connect(mapStateToProps, null)(ReadyToStart)
+const ReadyToStartContainer = connect(mapStateToProps, null)(ContactPage)
 
 export default ReadyToStartContainer;

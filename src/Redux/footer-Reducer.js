@@ -40,7 +40,7 @@ const footerPageSlice = createSlice({
 		},
 		pagesColumn: {
 			title: 'Pages',
-			links: ['home', 'about', 'services', 'packages', 'blog', 'contact']
+			links: ['home', 'about', 'services', 'testimonials', 'blog', 'contact']
 		},
 		utilityColumn: {
 			title: 'Utility pages',

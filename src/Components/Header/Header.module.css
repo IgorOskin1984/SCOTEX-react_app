@@ -9,7 +9,7 @@
 }
 
 .container {
-	background-color: blueviolet;
+	/*background-color: blueviolet;*/
 	display: flex;
 	column-gap: 35px;
 	align-items: center;
