@@ -1,9 +1,6 @@
 import React from "react";
 import { LiNavLink } from "../Menu_link/MenuLink";
 import s from './SelectPage.module.css'
-import { NavLink, Navigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { showPagesListAC } from "../../../Redux/header-toolkitSlice";
 
 const pagesNavItemСreater = (arr) => {
 	return arr.map((title) => {
@@ -21,11 +18,15 @@ const pagesNavItemСreater = (arr) => {
 
 const SelectPage = ({ links, title }) => {
 
-	//const dispatch = useDispatch(showPagesListAC())
-	//const classNames = isListOpen ? `${s.body} ${s.active}` : s.body;
+	const [isActive, setIsActive] = React.useState(false);
+	const handleSetActive = () => {
+		setIsActive(!isActive);
+	};
+
+	const classNames = isActive ? `${s.pageLink} ${s.active}` : s.pageLink;
 
 	return (
-		<li className={s.pageLink} >
+		<li className={classNames} onClick={handleSetActive}>
 			<div className={s.title}>
 				<p >{title}</p>
 			</div>
