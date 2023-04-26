@@ -3,6 +3,8 @@
 	padding-bottom: 100px;
 }
 
+.container {}
+
 .content {
 	display: flex;
 	justify-content: space-between;

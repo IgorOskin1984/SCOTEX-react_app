@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import s from './ServicesPage.module.css'
 import { Button } from "../../small_Components/Button/Button";
 import ContentComponent from "../../small_Components/Content-Component/ContentComponent";
@@ -18,8 +18,14 @@ const ServicesItem = ({ paylod }) => {
 }
 
 const ServicesPage = (props) => {
+	const ref = useRef(null);
+
+	useEffect(() => {
+		ref.current.scrollIntoView({ behavior: 'smooth' });
+	}, []);
+
 	return <>
-		<section className={s.services}>
+		<section ref={ref} className={s.services}>
 			<div className={s.container}>
 				<div className={s.content}>
 					<ContentComponent payload={props.servicesPageContent} />

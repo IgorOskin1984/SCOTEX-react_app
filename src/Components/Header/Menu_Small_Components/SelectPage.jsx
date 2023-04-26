@@ -2,13 +2,14 @@ import React from "react";
 import { LiNavLink } from "../Menu_link/MenuLink";
 import s from './SelectPage.module.css'
 
-const pagesNavItemСreater = (arr) => {
+const pagesNavItemСreater = (arr, handleScrollToRef) => {
 	return arr.map((title) => {
 		if (!title) {
 			return console.error('some error');
 		}
 		let newtitle = title[0].toUpperCase() + title.slice(1);
 		return <LiNavLink
+			//handleScrollToRef={handleScrollToRef}
 			liClassName={s.pagesColumnItem}
 			className={s.hederPagesLinks}
 			key={title} linkPath={title} title={newtitle} />

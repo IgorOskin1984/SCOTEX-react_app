@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import s from './BlogPage.module.css'
 import ContentComponent from "../../small_Components/Content-Component/ContentComponent";
 import { Button } from "../../small_Components/Button/Button";
@@ -33,8 +33,14 @@ const cartCreater = (arr) => {
 }
 
 const BlogPage = (props) => {
+	const ref = useRef(null);
+
+	useEffect(() => {
+		ref.current.scrollIntoView({ behavior: 'smooth' });
+	}, []);
+
 	return (
-		<section className={s.blogPage}>
+		<section ref={ref} className={s.blogPage}>
 			<div className={s.container}>
 				<div className={s.content}>
 					<ContentComponent payload={props.blogPageContent} />

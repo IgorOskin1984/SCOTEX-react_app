@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import s from './ContactPage.module.css'
 import { Button } from "../../small_Components/Button/Button";
 
 const ContactPage = (props) => {
+	const ref = useRef(null);
+
+	useEffect(() => {
+		ref.current.scrollIntoView({ behavior: 'smooth' });
+	}, []);
+
 	return (
 		<>
-			<section className={s.readyToStart}>
+			<section ref={ref} className={s.readyToStart}>
 				<div className={s.container}>
 					<div className={s.colums}>
 						<div className={s.content}>
