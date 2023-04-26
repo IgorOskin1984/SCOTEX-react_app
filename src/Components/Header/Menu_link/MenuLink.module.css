@@ -24,4 +24,9 @@
 	.listLink {
 		font-size: 32px;
 	}
+
+	.isActive {
+		color: #3D96F4;
+		font-size: 32px;
+	}
 }

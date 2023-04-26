@@ -18,7 +18,6 @@ export const LiNavLink = (props) => {
 					to={`/${props.linkPath}`}
 					className={({ isActive }) => isActive ? s.isActive : s.listLink + ' ' + props.className}
 				>
-
 					{props.title}
 				</NavLink>
 			</li >

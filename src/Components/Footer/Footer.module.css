@@ -61,6 +61,12 @@
 	row-gap: 24px;
 }
 
+.list li a {
+	font-size: 16px;
+	color: #999999;
+	font-weight: 300;
+}
+
 .pagesColumnLinksItem,
 .utilityColumnListItem,
 .text,
@@ -195,6 +201,12 @@
 		grid-template-columns: auto auto;
 		column-gap: 35px;
 	}
+
+	/*.list li a {
+		font-size: 16px;
+		color: #999999;
+		font-weight: 300;
+	}*/
 
 	.pages .title,
 	.utility .title {
