@@ -6,7 +6,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: end;
+	justify-content: flex-end;
 	column-gap: 35px;
 	row-gap: 3px;
 }

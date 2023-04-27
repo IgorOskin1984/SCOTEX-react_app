@@ -1,5 +1,4 @@
 import { Menu } from "./Menu";
-import { showMenuTitlesAC } from "./../../../Redux/header-Reducer";
 import { connect } from "react-redux";
 
 //class MenuContainer extends React.Component {
@@ -21,14 +20,7 @@ const mapStateToProps = (state) => {
 		links: state.footerPage.pagesColumn.links,
 	}
 }
-const mapDispatchToProps = (dispatch) => {
-	return {
-		onClickAddPost: (buttonState) => {
-			dispatch(showMenuTitlesAC(buttonState))
-		}
-	}
-}
 
-const MenuContainer = connect(mapStateToProps, mapDispatchToProps)(Menu)
+const MenuContainer = connect(mapStateToProps, null)(Menu)
 
 export default MenuContainer
