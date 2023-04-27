@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import './../../css/index.css'
 import s from './Main.module.css'
 import { Navigate, Route, Routes } from "react-router-dom";
+import BlogPageContaimer from "./Page-Blog/Container_BlogPage";
 
 const renderComponent = (componentName) => {
 	const folderName = `Page-${componentName}`
@@ -16,7 +17,7 @@ const routerCreater = (arr) => {
 		const headerLink = `/${title}`
 		const componentName = `${title[0].toUpperCase() + title.slice(1)}`;
 		return (
-			<Route path={headerLink} element={
+			<Route key={title} path={headerLink} element={
 				<Suspense fallback={<div>Загрузка...</div>}>
 					{renderComponent(componentName)}
 				</Suspense>
@@ -35,6 +36,11 @@ const Main = (props) => {
 					</Suspense>} />
 
 				{routerCreater(props.headerLinks)}
+
+				<Route path="/blog" element={
+					<Suspense fallback={<div>Загрузка...</div>}>
+						<BlogPageContaimer />
+					</Suspense>} />
 
 			</Routes>
 		</div>

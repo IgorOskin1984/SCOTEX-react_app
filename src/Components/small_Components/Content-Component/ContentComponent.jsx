@@ -15,14 +15,16 @@ const ContentComponent = (props) => {
 	}
 
 	return <>
-		{props.payload.label && <NavLink to={'/#'} className={s.label}>{props.payload.label}</NavLink>}
-		{props.payload.label
-			? <h1 className={s.title}>{props.payload.title}</h1>
-			: <h1 className={s.titleWithBefore}>{props.payload.title}</h1>}
-		<div className={s.text}>
-			<p>
+		<div className={s.wrapper}>
+			{props.payload.label && <NavLink to={'/#'} className={s.label}>{props.payload.label}</NavLink>}
+			{props.payload.label
+				? <h2 className={s.title}>{props.payload.title}</h2>
+				: <h2 className={s.titleWithBefore}>{props.payload.title}</h2>}
+			<div className={s.text}>
+				{/*<p>*/}
 				{props.payload.text}
-			</p>
+				{/*</p>*/}
+			</div>
 		</div>
 	</>
 }

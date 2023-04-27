@@ -4,6 +4,9 @@ import aboutPageSliceReducer from "./aboutPage-Reducer";
 import commonSateSlice from "./commonSate-Reducer";
 import servicesPageSliceReducer from "./servicesPage-Reducer";
 import whyUsPageSliceReducer from "./whyUs-Reducer";
+import AdvantagesPageSliceReducer from './advantagesPage-Reducer';
+import testimonialsPageSliceReducer from './Testimonials-Reducer';
+import blogPageSliceReducer from './BlogPage-Reducer';
 
 //const rootReducer = combineReducers({
 //	header: todosSliceReducer
@@ -16,6 +19,9 @@ export const store = configureStore({
 		aboutPage: aboutPageSliceReducer,
 		commonSate: commonSateSlice,
 		servicesPage: servicesPageSliceReducer,
-		whyUsPage: whyUsPageSliceReducer
+		whyUsPage: whyUsPageSliceReducer,
+		advantagesPage: AdvantagesPageSliceReducer,
+		testimonialsPage: testimonialsPageSliceReducer,
+		blogPage: blogPageSliceReducer
 	}
 })

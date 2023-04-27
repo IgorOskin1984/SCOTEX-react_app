@@ -11,6 +11,9 @@
 .content {
 	flex: 0 1 50%;
 	align-self: center;
+	display: flex;
+	flex-direction: column;
+	row-gap: 32px;
 }
 
 .title {
@@ -96,6 +99,12 @@
 @media (max-width: 1100px) {
 	.container {
 		flex-direction: column;
+		row-gap: 50px;
+	}
+
+	.content {
+		align-self: flex-start;
+		flex: 0 1 auto;
 	}
 
 	.title,

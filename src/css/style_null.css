@@ -64,7 +64,7 @@ button::-moz-focus-inner {
 
 a,
 a:visited {
-	color: #fff;
+	/*color: #fff;*/
 	text-decoration: none;
 }
 

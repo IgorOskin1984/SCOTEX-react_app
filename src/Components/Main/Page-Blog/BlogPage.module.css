@@ -1,0 +1,159 @@
+.blogPage {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content :first-child {
+	flex: 0 1 60%;
+}
+
+.content :last-child {
+	align-self: flex-end;
+}
+
+/*========================================================================================================================================================*/
+
+.items {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3%;
+	/* 48/1310 */
+	/* 48/394 */
+}
+
+.cart {
+	padding: 40px 26px;
+	flex: 0 1 33%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.header {
+	flex: 0 1 auto;
+	border-radius: 24px 24px 0 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.image {
+	display: block;
+	position: relative;
+	padding-bottom: 49%;
+	/* 194/394 */
+}
+
+.image img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	transform: scale(1.01);
+}
+
+.label {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 9px 10px;
+	border-radius: 0px 10px 0px 0px;
+	background: rgba(129, 129, 139, 0.5);
+}
+
+.label a {
+	color: #fff;
+}
+
+.label a:hover {
+	text-decoration: underline;
+}
+
+.cartContent {
+	background: rgba(129, 129, 139, 0.1);
+	padding: 36px 26px 40px 26px;
+	border-radius: 0 0 24px 24px;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	flex: 1 1 auto;
+}
+
+.date,
+.text {
+	color: rgba(129, 129, 139, 0.9);
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.title {}
+
+.title a {
+	color: #fff;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 1.42;
+}
+
+.title a:hover {
+	text-decoration: underline;
+}
+
+.text {
+	flex: 1 1 auto;
+}
+
+.navLink {}
+
+.navLink a {
+	color: #3D96F4;
+	font-size: 14px;
+	line-height: 1.57;
+}
+
+.navLink a:hover {
+	text-decoration: underline;
+}
+
+/*========================================================================================================================================================*/
+
+@media (max-width: 1110px) {
+	.items {
+		gap: 1%;
+	}
+
+	.cartContent {
+		padding: 25px 15px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.blogPage {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.content {
+		flex-direction: column;
+		row-gap: 32px;
+	}
+
+}
+
+@media (max-width: 767.98px) {
+	.blogPage {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.items {
+		grid-template-columns: auto;
+	}
+}

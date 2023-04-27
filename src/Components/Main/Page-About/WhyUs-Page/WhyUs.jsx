@@ -3,10 +3,12 @@ import s from './WhyUs.module.css'
 import ContentComponent from "../../../small_Components/Content-Component/ContentComponent";
 
 const listItemCreater = (arr) => {
+	let key = 0;
 	return arr.map((listItem) => {
-		return <>
-			<li className={s.listItem}>{listItem}</li>
-		</>
+		key += 1
+		return (
+			<li key={key} className={s.listItem}>{listItem}</li>
+		)
 	})
 }
 

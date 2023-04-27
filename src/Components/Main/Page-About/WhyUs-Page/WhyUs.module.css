@@ -12,6 +12,17 @@
 	flex: 0 1 50%;
 	display: flex;
 	align-self: center;
+	position: relative;
+}
+
+.images::before {
+	content: '';
+	width: 122px;
+	height: 122px;
+	background: url('./../../../../images/icons/decor.svg') 0 0 /100% no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: -25px;
 }
 
 .img_01 {
