@@ -3,6 +3,7 @@ import Header from "./Header";
 
 const mapStateToProps = (state) => {
 	return {
+		logo: state.commonSate.logo,
 		buttonText: state.commonSate.buttons.buttonTexts,
 		buttonColor: state.commonSate.buttons.buttonColors
 	}

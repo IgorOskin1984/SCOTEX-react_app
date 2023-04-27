@@ -1,3 +1,4 @@
+import React, { useEffect, useRef } from "react";
 import { Button } from "../../small_Components/Button/Button";
 import ContentComponent from "../../small_Components/Content-Component/ContentComponent"
 import s from './Testimonials.module.css'
@@ -48,14 +49,18 @@ const cartCreater = (arr, star) => {
 }
 
 const Testimonials = (props) => {
+	const ref = useRef(null);
+
+	useEffect(() => {
+		ref.current.scrollIntoView({ behavior: 'smooth' });
+	}, []);
+
 	return (
 		<>
-			<section className={s.testimonials}>
+			<section ref={ref} className={s.testimonials}>
 				<div className={s.container}>
 					<div className={s.content}>
-						<div>
-							<ContentComponent payload={props.testimonialsPageContent} />
-						</div>
+						<ContentComponent payload={props.testimonialsPageContent} />
 						<Button buttonText={props.buttonText} />
 					</div>
 					<div className={s.items}>

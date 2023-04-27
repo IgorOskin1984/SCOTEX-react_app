@@ -13,6 +13,7 @@ const renderComponent = (componentName) => {
 }
 
 const routerCreater = (arr) => {
+	//debugger
 	return arr.map((title) => {
 		const headerLink = `/${title}`
 		const componentName = `${title[0].toUpperCase() + title.slice(1)}`;

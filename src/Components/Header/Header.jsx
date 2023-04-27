@@ -1,7 +1,6 @@
 import React from "react";
 //import './../../css/App.css'
 import s from './Header.module.css'
-import logo from './../../images/logo.svg'
 import { Button } from "../small_Components/Button/Button";
 import { Cart } from "./Cart/Cart";
 import MenuContainer from "./Menu/MenuContainer";
@@ -16,7 +15,7 @@ const Header = (props) => {
 			<div className={s.container}>
 
 				<NavLink to='/home' className={s.logo} href="#">
-					<img src={logo} alt="logo" />
+					<img src={props.logo} alt="logo" />
 				</NavLink>
 
 				<MenuContainer />

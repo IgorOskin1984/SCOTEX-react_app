@@ -7,6 +7,8 @@ import whyUsPageSliceReducer from "./whyUs-Reducer";
 import AdvantagesPageSliceReducer from './advantagesPage-Reducer';
 import testimonialsPageSliceReducer from './Testimonials-Reducer';
 import blogPageSliceReducer from './BlogPage-Reducer';
+import footerPageSliceReducer from './footer-Reducer';
+import subscribeSliceReducer from './subscribe-Reducer';
 
 //const rootReducer = combineReducers({
 //	header: todosSliceReducer
@@ -22,6 +24,9 @@ export const store = configureStore({
 		whyUsPage: whyUsPageSliceReducer,
 		advantagesPage: AdvantagesPageSliceReducer,
 		testimonialsPage: testimonialsPageSliceReducer,
-		blogPage: blogPageSliceReducer
-	}
+		blogPage: blogPageSliceReducer,
+		footerPage: footerPageSliceReducer,
+		subscribeEmail: subscribeSliceReducer
+	},
+	devTools: true,
 })

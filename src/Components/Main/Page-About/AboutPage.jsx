@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import s from './AboutPage.module.css'
 import contStyle from './../../../css/content.module.css'
 import { Button } from "../../small_Components/Button/Button";
@@ -7,20 +7,34 @@ import ContentComponent from "../../small_Components/Content-Component/ContentCo
 import WhyUsContainer from "./WhyUs-Page/Container_WhyUs";
 
 const AboutPage = ({ peoplsPhotos, buttonText, buttonColor, aboutPageContent }) => {
-	return <>
-		<AboutPage_1
-			peoplsPhotos={peoplsPhotos}
-			buttonText={buttonText}
-			buttonColor={buttonColor}
-			aboutPageContent={aboutPageContent}
-		/>
-		<WhyUsContainer />
-	</>
+	const ref = useRef(null);
+
+	useEffect(() => {
+		ref.current.scrollIntoView({ behavior: 'smooth' });
+	}, []);
+	return (
+		<div ref={ref}>
+			<AboutPage_1
+				peoplsPhotos={peoplsPhotos}
+				buttonText={buttonText}
+				buttonColor={buttonColor}
+				aboutPageContent={aboutPageContent}
+			/>
+			<WhyUsContainer />
+
+		</div>
+	)
 }
 
 export const AboutPage_1 = (props) => {
+	const ref = useRef(null);
+
+	useEffect(() => {
+		ref.current.scrollIntoView({ behavior: 'smooth' });
+	}, []);
+
 	return <>
-		<section className={s.aboutPage}>
+		<section ref={ref} className={s.aboutPage}>
 			<div className={s.container}>
 				<div className={contStyle.content}>
 					<ContentComponent payload={props.aboutPageContent} />

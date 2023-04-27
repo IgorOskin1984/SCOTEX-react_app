@@ -1,0 +1,74 @@
+.pageLink {
+	position: relative;
+}
+
+.title {
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 1.62;
+}
+
+.active:hover .body {
+	position: absolute;
+	left: -10px;
+	display: block;
+}
+
+.body {
+	display: none;
+}
+
+.items {
+	border-radius: 5px;
+	display: grid;
+	gap: 10px;
+	padding: 10px;
+}
+
+.items li :hover {
+	background: rgba(129, 129, 139, 0.3);
+	border-radius: 5px;
+	padding: 5px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.hederPagesLinks {}
+
+.active {}
+
+@media (max-width: 768px) {
+
+	.pageLink,
+	.body {
+		width: 100%;
+	}
+
+	.active:hover .body {
+		position: unset;
+		left: -10px;
+		display: block;
+	}
+
+	.items {
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		padding-bottom: 0;
+	}
+}
+
+@media (max-width: 767.98px) {
+
+	.title {
+		font-size: 32px;
+	}
+
+	.items li a {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.items {
+		grid-template-columns: 1fr;
+	}
+}

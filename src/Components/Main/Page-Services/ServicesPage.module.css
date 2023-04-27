@@ -16,6 +16,11 @@
 	row-gap: 32px;
 }
 
+.actions {
+	flex: 0 1 auto;
+	align-self: self-start;
+}
+
 .title {
 	font-weight: 500;
 	font-size: 51px;
