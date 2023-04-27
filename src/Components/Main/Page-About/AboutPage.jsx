@@ -21,7 +21,6 @@ const AboutPage = ({ peoplsPhotos, buttonText, buttonColor, aboutPageContent }) 
 				aboutPageContent={aboutPageContent}
 			/>
 			<WhyUsContainer />
-
 		</div>
 	)
 }

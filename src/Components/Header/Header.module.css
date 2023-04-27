@@ -13,8 +13,7 @@
 	display: flex;
 	column-gap: 35px;
 	align-items: center;
-	min-height: 116px;
-	padding: 0 15px;
+	padding: 15px;
 }
 
 .logo {
@@ -26,14 +25,12 @@
 
 @media (max-width: 991.98px) {
 	.container {
-		min-height: 90px;
 		column-gap: 25px;
 	}
 }
 
 @media (max-width:768px) {
 	.container {
-		min-height: 70px;
 		column-gap: 15px;
 	}
 }
