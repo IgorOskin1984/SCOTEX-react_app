@@ -11,7 +11,7 @@
 	row-gap: 3px;
 }
 
-.menuBody {}
+/*.menuBody {}*/
 
 @media (max-width: 991.98px) {
 	.menuList {
