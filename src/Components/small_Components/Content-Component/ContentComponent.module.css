@@ -1,0 +1,84 @@
+.label {
+	display: inline-block;
+	border: 1px solid rgba(129, 129, 139, 0.2);
+	border-radius: 12px;
+	font-weight: 300;
+	font-size: 11px;
+	line-height: 1.54;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding: 11px 19px;
+	color: #9C9C9C;
+	transition: border 0.3s ease 0s;
+}
+
+.label:not(:last-child) {
+	margin-bottom: 19px;
+}
+
+.label:hover {
+	border: 1px solid rgba(129, 129, 139, 0.4);
+}
+
+.title,
+.titleWithBefore {
+	font-weight: 500;
+	font-size: 51px;
+	line-height: 1.19;
+	color: #FFFFFF;
+	max-width: 520px;
+	position: relative;
+}
+
+.title:not(:last-child),
+.titleWithBefore {
+	margin-bottom: 28px;
+}
+
+.titleWithBefore::before {
+	content: '';
+	background: url('./../../../images/icons/decor.svg') 0 0 / 100% no-repeat;
+	width: 122px;
+	height: 122px;
+	position: absolute;
+	top: -10px;
+	left: -34px;
+}
+
+.text {
+	font-size: 18px;
+	line-height: 1.5;
+	max-width: 500px;
+}
+
+.text:not(:last-child) {
+	margin-bottom: 33px;
+}
+
+
+@media (max-width: 991.98px) {
+	.title {
+		font-size: 44px;
+	}
+}
+
+@media (max-width:767.98px) {
+	.title {
+		font-size: 32px;
+	}
+
+	.title:not(:last-child),
+	.text:not(:last-child) {
+		margin-bottom: 15px;
+	}
+}
+
+@media (min-width:768px) {
+	.title {
+		max-width: 520px;
+	}
+
+	.text {
+		max-width: 500px;
+	}
+}

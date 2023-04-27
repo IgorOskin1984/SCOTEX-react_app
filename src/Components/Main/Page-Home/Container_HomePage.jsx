@@ -1,11 +1,14 @@
-import React from "react";
+import { connect } from "react-redux";
+import HomePage from "./HomePage";
 
-const HomePage = (props) => {
-	return (
-		<>
-			<h1>HomePage</h1>
-		</>
-	)
+const mapStateToProps = (state) => {
+	return {
+		peoplsPhotos: state.aboutPage.peoplsPhotos,
+		buttonText: state.commonSate.buttons.buttonTexts,
+		buttonColor: state.commonSate.buttons.buttonColors,
+		aboutPageContent: state.commonSate.content.aboutPageContent
+	}
 }
 
-export default HomePage;
+const HomePageContainer = connect(mapStateToProps, null)(HomePage)
+export default HomePageContainer;

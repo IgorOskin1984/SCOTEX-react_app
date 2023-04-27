@@ -1,0 +1,91 @@
+.whyUs {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.container {
+	display: flex;
+	gap: 64px;
+}
+
+.images {
+	flex: 0 1 50%;
+	display: flex;
+	align-self: center;
+}
+
+.img_01 {
+	align-self: flex-end;
+	overflow: hidden;
+	border-radius: 90% 0% 50% 50% / 50% 0% 27.5% 27.5%;
+}
+
+.img_02 {
+	border-radius: 50% 50% 50% 0;
+	align-self: flex-end;
+	overflow: hidden;
+}
+
+.img_01 img,
+.img_02 img {
+	width: 100%;
+}
+
+.content {
+	flex: 0 1 50%;
+	align-self: center;
+}
+
+.list {
+	margin-top: 35px;
+}
+
+.listItem {
+	color: #9C9C9C;
+	font-size: 16px;
+	line-height: 1.5;
+	position: relative;
+	display: flex;
+	padding-left: 42px;
+	padding-top: 4px;
+}
+
+.listItem:not(:last-child) {
+	margin-bottom: 25px;
+}
+
+.listItem::before {
+	content: '';
+	position: absolute;
+	background: rgba(129, 129, 139, 0.1) url('./../../../../images/icons/whyUs/checked.svg') center no-repeat;
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	left: 0;
+	top: 0;
+}
+
+@media (max-width: 1100px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {
+	.container {
+		flex-direction: column-reverse;
+	}
+}
+
+@media (max-width: 425px) {
+	.images {
+		flex-direction: column-reverse;
+	}
+
+	.img_02 {
+		align-self: flex-start;
+	}
+
+	.whyUs {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}

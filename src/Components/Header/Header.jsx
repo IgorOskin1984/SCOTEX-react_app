@@ -3,12 +3,11 @@ import './../../css/App.css'
 import s from './Header.module.css'
 import logo from './../../images/logo.svg'
 import { Button } from "../small_Components/Button/Button";
-import { Burger } from "./Burger/Burger";
-import { Menu } from "./Menu/Menu";
 import { Cart } from "./Cart/Cart";
 import MenuContainer from "./Menu/MenuContainer";
 import { BurgerContainer } from "./Burger/BurgerContainer";
 import { NavLink } from "react-router-dom";
+
 
 
 const Header = (props) => {
@@ -22,7 +21,7 @@ const Header = (props) => {
 
 				<MenuContainer />
 				<Cart />
-				<Button />
+				<Button buttonText={props.buttonText.getStarted} />
 
 				<BurgerContainer />
 			</div>
