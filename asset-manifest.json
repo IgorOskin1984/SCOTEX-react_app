@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/growfy-react_app/static/css/main.966785b3.css",
-    "main.js": "/growfy-react_app/static/js/main.0cf93479.js",
+    "main.js": "/growfy-react_app/static/js/main.869fa9e5.js",
     "static/css/921.43f38467.chunk.css": "/growfy-react_app/static/css/921.43f38467.chunk.css",
     "static/js/921.9b7dd3d0.chunk.js": "/growfy-react_app/static/js/921.9b7dd3d0.chunk.js",
     "static/css/738.83bc861a.chunk.css": "/growfy-react_app/static/css/738.83bc861a.chunk.css",
@@ -84,7 +84,7 @@
     "static/media/Star.svg": "/growfy-react_app/static/media/Star.649e0a5a555513c76abafc0067627f0e.svg",
     "static/media/facebook.svg": "/growfy-react_app/static/media/facebook.6f6fed4e9b5972b8ac962f45b21ee31d.svg",
     "main.966785b3.css.map": "/growfy-react_app/static/css/main.966785b3.css.map",
-    "main.0cf93479.js.map": "/growfy-react_app/static/js/main.0cf93479.js.map",
+    "main.869fa9e5.js.map": "/growfy-react_app/static/js/main.869fa9e5.js.map",
     "921.43f38467.chunk.css.map": "/growfy-react_app/static/css/921.43f38467.chunk.css.map",
     "921.9b7dd3d0.chunk.js.map": "/growfy-react_app/static/js/921.9b7dd3d0.chunk.js.map",
     "738.83bc861a.chunk.css.map": "/growfy-react_app/static/css/738.83bc861a.chunk.css.map",
@@ -140,6 +140,6 @@
   },
   "entrypoints": [
     "static/css/main.966785b3.css",
-    "static/js/main.0cf93479.js"
+    "static/js/main.869fa9e5.js"
   ]
 }
