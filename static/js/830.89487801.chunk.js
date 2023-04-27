@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[830],{2830:function(a,e,t){t.r(e),e.default={advantagesPage:"AdvantagesPage_advantagesPage__-dgDc",container:"AdvantagesPage_container__IuxD+",content:"AdvantagesPage_content__AuL7v",image:"AdvantagesPage_image__pOR7j",contentItem:"AdvantagesPage_contentItem__pbFrK",title:"AdvantagesPage_title__0zNuO",text:"AdvantagesPage_text__0ziUI"}}}]);
+//# sourceMappingURL=830.89487801.chunk.js.map
