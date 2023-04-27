@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/growfy-react_app/static/css/main.966785b3.css",
-    "main.js": "/growfy-react_app/static/js/main.0cf93479.js",
+    "main.css": "/growfy-react_app/static/css/main.902c3339.css",
+    "main.js": "/growfy-react_app/static/js/main.fa46b4eb.js",
     "static/css/921.43f38467.chunk.css": "/growfy-react_app/static/css/921.43f38467.chunk.css",
     "static/js/921.9b7dd3d0.chunk.js": "/growfy-react_app/static/js/921.9b7dd3d0.chunk.js",
     "static/css/738.83bc861a.chunk.css": "/growfy-react_app/static/css/738.83bc861a.chunk.css",
@@ -79,12 +79,11 @@
     "static/media/instagram.svg": "/growfy-react_app/static/media/instagram.87aa634d0eb7507fd21dd3d70638f53b.svg",
     "static/media/linkedin.svg": "/growfy-react_app/static/media/linkedin.570819e375a270a013839e58caebd5b2.svg",
     "static/media/youtube.svg": "/growfy-react_app/static/media/youtube.ccc193a221b04ab5acaae191fa52909a.svg",
-    "static/media/shopping-cart-svgrepo-com.svg": "/growfy-react_app/static/media/shopping-cart-svgrepo-com.f53f6c04d875799e773f.svg",
     "static/media/checked.svg": "/growfy-react_app/static/media/checked.73efcf47ba274681b82d.svg",
     "static/media/Star.svg": "/growfy-react_app/static/media/Star.649e0a5a555513c76abafc0067627f0e.svg",
     "static/media/facebook.svg": "/growfy-react_app/static/media/facebook.6f6fed4e9b5972b8ac962f45b21ee31d.svg",
-    "main.966785b3.css.map": "/growfy-react_app/static/css/main.966785b3.css.map",
-    "main.0cf93479.js.map": "/growfy-react_app/static/js/main.0cf93479.js.map",
+    "main.902c3339.css.map": "/growfy-react_app/static/css/main.902c3339.css.map",
+    "main.fa46b4eb.js.map": "/growfy-react_app/static/js/main.fa46b4eb.js.map",
     "921.43f38467.chunk.css.map": "/growfy-react_app/static/css/921.43f38467.chunk.css.map",
     "921.9b7dd3d0.chunk.js.map": "/growfy-react_app/static/js/921.9b7dd3d0.chunk.js.map",
     "738.83bc861a.chunk.css.map": "/growfy-react_app/static/css/738.83bc861a.chunk.css.map",
@@ -139,7 +138,7 @@
     "550.3ff7df8c.chunk.js.map": "/growfy-react_app/static/js/550.3ff7df8c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.966785b3.css",
-    "static/js/main.0cf93479.js"
+    "static/css/main.902c3339.css",
+    "static/js/main.fa46b4eb.js"
   ]
 }
