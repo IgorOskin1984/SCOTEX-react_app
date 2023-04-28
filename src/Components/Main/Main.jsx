@@ -1,8 +1,6 @@
-import React, { Suspense, useRef } from "react";
-import './../../css/index.css'
+import React, { Suspense, forwardRef } from "react";
 import s from './Main.module.css'
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
-import BlogPageContaimer from "./Page-Blog/Container_BlogPage";
 
 const renderComponent = (componentName, componentRef) => {
 	const folderName = `Page-${componentName}`
@@ -26,9 +24,8 @@ const routerCreater = (arr, componentRef) => {
 	})
 }
 
-const Main = (props) => {
+const Main = forwardRef((props, ref) => {
 	const location = useLocation();
-	const componentRef = useRef(null);
 
 	return (
 		<div className={s.mainPage + ' ' + s.container}>
@@ -38,11 +35,11 @@ const Main = (props) => {
 						<Navigate to='home' />
 					</Suspense>} />
 
-				{routerCreater(props.headerLinks, componentRef)}
+				{routerCreater(props.headerLinks, ref)}
 
 			</Routes>
 		</div>
 	)
-}
+});
 
 export default Main;

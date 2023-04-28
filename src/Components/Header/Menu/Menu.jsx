@@ -4,10 +4,10 @@ import { LiNavLink } from "../NavLinks/MenuLink";
 import SelectPage from "../Menu_Small_Components/SelectPage";
 import { showMenuTitlesAC } from "../../../Redux/header-toolkitSlice";
 import { useDispatch } from "react-redux";
-//import ScrollToTopNavLink from "../NavLinks/ScrollToTopNavLink";
 
 
-const menuLinkCreater = (arr, props, componentRef) => arr.map((title) => {
+const menuLinkCreater = (arr, props) => arr.map((title) => {
+	//debugger
 
 	const dispatch = useDispatch()
 
@@ -31,7 +31,6 @@ const menuLinkCreater = (arr, props, componentRef) => arr.map((title) => {
 		default:
 			return (
 				<LiNavLink
-					componentRef={componentRef}
 					onPageItemClick={onPageItemClick}
 					key={title}
 					linkPath={title}
