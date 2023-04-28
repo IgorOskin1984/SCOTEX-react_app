@@ -6,7 +6,7 @@ export const Button = ({ buttonColor, buttonText, ...restProps }) => {
 	//debugger
 	const backgroundColor = buttonColor || undefined
 
-	const pathFunc = (buttonText) => {
+	const navTo = (buttonText) => {
 		switch (buttonText) {
 			case 'Get started':
 				return '/contact'
@@ -24,12 +24,12 @@ export const Button = ({ buttonColor, buttonText, ...restProps }) => {
 				return '/blog'
 
 			default:
-				return buttonText;
+				return `/${buttonText}`;
 		}
 
 	}
 
-	const path = pathFunc(buttonText)
+	const path = navTo(buttonText)
 
 	return (
 		<>
