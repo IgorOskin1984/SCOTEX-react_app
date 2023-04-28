@@ -56,19 +56,17 @@ const Testimonials = (props) => {
 	}, []);
 
 	return (
-		<>
-			<section ref={ref} className={s.testimonials}>
-				<div className={s.container}>
-					<div className={s.content}>
-						<ContentComponent payload={props.testimonialsPageContent} />
-						<Button buttonText={props.buttonText} />
-					</div>
-					<div className={s.items}>
-						{cartCreater(props.usersCartData, props.star)}
-					</div>
+		<section ref={ref} className={s.testimonials}>
+			<div className={s.container}>
+				<div className={s.content}>
+					<ContentComponent payload={props.testimonialsPageContent} />
+					<Button buttonText={props.buttonText} />
 				</div>
-			</section>
-		</>
+				<div className={s.items}>
+					{cartCreater(props.usersCartData, props.star)}
+				</div>
+			</div>
+		</section>
 	)
 }
 export default Testimonials;

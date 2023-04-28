@@ -51,7 +51,7 @@ const FooterSubscribeForm = (props) => {
 						type="submit"
 						disabled={isSubmitting}
 					>
-						Submit
+						Subscribe
 					</button>
 				</Form>
 			)}

@@ -1,15 +1,15 @@
 import React from "react";
-import { LiNavLink } from "../Menu_link/MenuLink";
+import { NavLinks } from "../NavLinks/NavLinks";
 import s from './SelectPage.module.css'
 
-const pagesNavItemСreater = (arr, handleScrollToRef) => {
+const pagesNavItemСreater = (arr, onPageItemClick) => {
 	return arr.map((title) => {
 		if (!title) {
 			return console.error('some error');
 		}
 		let newtitle = title[0].toUpperCase() + title.slice(1);
-		return <LiNavLink
-			//handleScrollToRef={handleScrollToRef}
+		return <NavLinks
+			onPageItemClick={onPageItemClick}
 			liClassName={s.pagesColumnItem}
 			className={s.hederPagesLinks}
 			key={title} linkPath={title} title={newtitle} />
@@ -17,7 +17,7 @@ const pagesNavItemСreater = (arr, handleScrollToRef) => {
 }
 
 
-const SelectPage = ({ links, title }) => {
+const SelectPage = ({ links, title, onPageItemClick }) => {
 
 	const [isActive, setIsActive] = React.useState(false);
 	const handleSetActive = () => {
@@ -33,7 +33,7 @@ const SelectPage = ({ links, title }) => {
 			</div>
 			<div className={s.body}>
 				<ul className={s.items}>
-					{pagesNavItemСreater(links)}
+					{pagesNavItemСreater(links, onPageItemClick)}
 				</ul>
 			</div>
 		</li>

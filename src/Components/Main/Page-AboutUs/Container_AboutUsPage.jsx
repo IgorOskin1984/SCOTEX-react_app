@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import AboutPage from './AboutPage'
+import AboutPage from './AboutUsPage'
 
 const mapStateToProps = (state) => {
 	//debugger
