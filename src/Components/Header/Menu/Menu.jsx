@@ -7,7 +7,6 @@ import { useDispatch } from "react-redux";
 
 
 const menuLinkCreater = (arr, props) => arr.map((title) => {
-	//debugger
 
 	const dispatch = useDispatch()
 

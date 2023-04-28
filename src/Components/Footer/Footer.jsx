@@ -65,9 +65,9 @@ const Footer = (props) => {
 			<div className={s.mainFooter}>
 				<div className={s.container}>
 					<div className={s.column + ' ' + s.growfy}>
-						<div className={s.growfyImage}>
-							<img src={props.logo} alt="growfy" />
-						</div>
+						<NavLink to='/home' href="#">
+							<img src={props.logo} alt="logo" />
+						</NavLink>
 						<div className={s.growfyText}>
 							<p>
 								{props.growfyText}
