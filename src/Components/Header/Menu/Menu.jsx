@@ -2,9 +2,18 @@ import React from "react";
 import s from './Menu.module.css'
 import { LiNavLink } from "../Menu_link/MenuLink";
 import SelectPage from "../Menu_Small_Components/SelectPage";
+import { showMenuTitlesAC } from "../../../Redux/header-toolkitSlice";
+import { useDispatch } from "react-redux";
 
 
 const menuLinkCreater = (arr, props) => arr.map((title) => {
+
+	const dispatch = useDispatch()
+
+	const onPageItemClick = () => {
+		dispatch(showMenuTitlesAC())
+	}
+
 	if (!title) {
 		return console.error('error at initial array headerSlice');
 	}
@@ -15,11 +24,12 @@ const menuLinkCreater = (arr, props) => arr.map((title) => {
 				<SelectPage key={title}
 					title={newtitle}
 					links={props.links}
+					onPageItemClick={onPageItemClick}
 				/>
 			)
 		default:
 			return (
-				<LiNavLink key={title} linkPath={title} title={newtitle} />
+				<LiNavLink onPageItemClick={onPageItemClick} key={title} linkPath={title} title={newtitle} />
 			)
 	}
 

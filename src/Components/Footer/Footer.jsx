@@ -35,7 +35,12 @@ const Footer = (props) => {
 				return console.error('some error');
 			}
 			let newtitle = title[0].toUpperCase() + title.slice(1);
-			return <LiNavLink liClassName={s.pagesColumnItem} className={s.pagesColumnLinksItem} key={title} linkPath={title} title={newtitle} />
+			return <LiNavLink
+				onPageItemClick={null}
+				className={s.pagesColumnLinksItem}
+				key={title}
+				linkPath={title}
+				title={newtitle} />
 		})
 	}
 
@@ -43,7 +48,11 @@ const Footer = (props) => {
 		return arr.map((item) => {
 			return (
 				<li key={item.name} >
-					<NavLink key={item.name} className={s.utilityColumnListItem} to={item.link}>{item.name}</NavLink>
+					<NavLink
+						key={item.name}
+						className={s.utilityColumnListItem}
+						to={item.link}>{item.name}
+					</NavLink>
 				</li>
 			)
 		})
