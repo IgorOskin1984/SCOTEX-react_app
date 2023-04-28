@@ -14,10 +14,32 @@ const menuLinkCreater = (arr, props) => arr.map((title) => {
 		dispatch(showMenuTitlesAC())
 	}
 
+	const newTitle = (name) => {
+		const capitalizedWords = name.split(' ').map(word => {
+			return word.charAt(0).toUpperCase() + word.slice(1);
+		});
+		return capitalizedWords.join(" ")
+	}
+
 	if (!title) {
 		return console.error('error at initial array headerSlice');
 	}
-	let newtitle = title[0].toUpperCase() + title.slice(1);
+
+	const path = (title) => {
+		const capitalizedWords = title.split(' ').map(word => {
+			return word.charAt(0).toUpperCase() + word.slice(1);
+		});
+		const joiningWord = capitalizedWords.join("")
+		const newPath = joiningWord.charAt(0).toLowerCase() + joiningWord.slice(1)
+		return newPath;
+	}
+
+	path(title)
+
+	let newtitle = newTitle(title)
+	title = path(title);
+
+
 	switch (newtitle) {
 		case 'Pages':
 			return (

@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const headerSlice = createSlice({
 	name: 'headerSliceName',
 	initialState: {
-		headerLinks: ['home', 'aboutus', 'services', 'testimonials', 'contact', 'blog'
+		headerLinks: ['home', 'aboutUs', 'services', 'testimonials', 'contact', 'blog'
 			//  'pages',  'сart', 'getStarted'
 		],
 		menuTitles: ['home', 'about us', 'pages', 'services'],

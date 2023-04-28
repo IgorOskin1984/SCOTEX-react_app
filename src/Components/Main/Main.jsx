@@ -11,6 +11,7 @@ const renderComponent = (componentName, componentRef) => {
 }
 
 const routerCreater = (arr, componentRef) => {
+	//debugger
 	return arr.map((title) => {
 		const path = `/${title}`
 		const componentName = `${title[0].toUpperCase() + title.slice(1)}`;
