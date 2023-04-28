@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 const cartCreater = (arr) => {
 	return arr.map((cart) => {
 		const key = cart.title
+		console.log(cart.navLink);
 		return (
 			<article key={key} className={s.cart}>
 				<div className={s.header}>
@@ -14,17 +15,17 @@ const cartCreater = (arr) => {
 						<img src={cart.image} alt="image" />
 					</div>
 					<div className={s.label}>
-						<NavLink to={'/#'}>{cart.label}</NavLink>
+						<NavLink to={cart.navLink}>{cart.label}</NavLink>
 					</div>
 				</div>
 				<div className={s.cartContent}>
 					<div className={s.date}>{cart.date}</div>
 					<div className={s.title}>
-						<NavLink to={'/#'}>{cart.title}</NavLink>
+						<NavLink to={cart.navLink}>{cart.title}</NavLink>
 					</div>
 					<div className={s.text}>{cart.text}</div>
 					<div className={s.navLink}>
-						<NavLink to={`${cart.navLink}`}>{cart.navLinkText}</NavLink>
+						<NavLink to={cart.navLink}>{cart.navLinkText}</NavLink>
 					</div>
 				</div>
 			</article>
