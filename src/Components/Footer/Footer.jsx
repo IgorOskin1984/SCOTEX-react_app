@@ -1,7 +1,7 @@
 import React from "react";
 import s from './Footer.module.css'
 import { NavLink } from "react-router-dom";
-import { LiNavLink } from "../Header/NavLinks/MenuLink";
+import { NavLinks } from "../Header/NavLinks/NavLinks";
 import FooterSubscribeForm from "./FooterSubscribeForm/FooterSubscribeForm";
 
 
@@ -35,7 +35,7 @@ const Footer = (props) => {
 				return console.error('some error');
 			}
 			let newtitle = title[0].toUpperCase() + title.slice(1);
-			return <LiNavLink
+			return <NavLinks
 				onPageItemClick={null}
 				className={s.pagesColumnLinksItem}
 				key={title}

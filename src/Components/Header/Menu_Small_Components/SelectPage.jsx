@@ -1,5 +1,5 @@
 import React from "react";
-import { LiNavLink } from "../NavLinks/MenuLink";
+import { NavLinks } from "../NavLinks/NavLinks";
 import s from './SelectPage.module.css'
 
 const pagesNavItemСreater = (arr, onPageItemClick) => {
@@ -8,7 +8,7 @@ const pagesNavItemСreater = (arr, onPageItemClick) => {
 			return console.error('some error');
 		}
 		let newtitle = title[0].toUpperCase() + title.slice(1);
-		return <LiNavLink
+		return <NavLinks
 			onPageItemClick={onPageItemClick}
 			liClassName={s.pagesColumnItem}
 			className={s.hederPagesLinks}

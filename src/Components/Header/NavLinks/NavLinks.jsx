@@ -1,8 +1,8 @@
 import React from "react";
-import s from './MenuLink.module.css'
+import s from './NavLinks.module.css'
 import { NavLink } from "react-router-dom";
 
-export const LiNavLink = (props) => {
+export const NavLinks = (props) => {
 	return (
 		<>
 			<li onClick={props.onPageItemClick} className={s.listItem + ' ' + props.liClassName}>

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import s from './Menu.module.css'
-import { LiNavLink } from "../NavLinks/MenuLink";
+import { NavLinks } from "../NavLinks/NavLinks";
 import SelectPage from "../Menu_Small_Components/SelectPage";
 import { showMenuTitlesAC } from "../../../Redux/header-toolkitSlice";
 import { useDispatch } from "react-redux";
@@ -29,7 +29,7 @@ const menuLinkCreater = (arr, props) => arr.map((title) => {
 			)
 		default:
 			return (
-				<LiNavLink
+				<NavLinks
 					onPageItemClick={onPageItemClick}
 					key={title}
 					linkPath={title}
