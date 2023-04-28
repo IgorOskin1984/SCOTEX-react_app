@@ -7,7 +7,6 @@ import { NavLink } from "react-router-dom";
 const cartCreater = (arr) => {
 	return arr.map((cart) => {
 		const key = cart.title
-		console.log(cart.navLink);
 		return (
 			<article key={key} className={s.cart}>
 				<div className={s.header}>
