@@ -34,8 +34,6 @@ const menuLinkCreater = (arr, props) => arr.map((title) => {
 		return newPath;
 	}
 
-	path(title)
-
 	let newtitle = newTitle(title)
 	title = path(title);
 

@@ -17,8 +17,8 @@ const commonSateSlice = createSlice({
 				contactUs: 'Contact us',
 				allServices: 'All services',
 				getInTouch: 'Get in touch',
-				allPosts: 'All Posts',
-				subscribe: 'Subscribe'
+				allPosts: 'All Posts'
+				//subscribe: 'Subscribe'
 			},
 			buttonColors: {
 				blue: '#3D96F4',
