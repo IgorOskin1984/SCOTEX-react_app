@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/growfy-react_app/static/css/main.07a897de.css",
-    "main.js": "/growfy-react_app/static/js/main.262b4bf1.js",
+    "main.js": "/growfy-react_app/static/js/main.3b4cc89b.js",
     "static/css/496.75ba197f.chunk.css": "/growfy-react_app/static/css/496.75ba197f.chunk.css",
     "static/js/496.79c1cc64.chunk.js": "/growfy-react_app/static/js/496.79c1cc64.chunk.js",
     "static/css/171.96b5963e.chunk.css": "/growfy-react_app/static/css/171.96b5963e.chunk.css",
@@ -75,7 +75,7 @@
     "static/media/03.svg.svg": "/growfy-react_app/static/media/03.svg.a0ea08d25bf85590edab333e7307582a.svg",
     "static/media/04.svg.svg": "/growfy-react_app/static/media/04.svg.342f36dd90b8055cf1fef918558ad916.svg",
     "static/media/decor.svg": "/growfy-react_app/static/media/decor.986711386faba7500c38.svg",
-    "static/media/logo.svg": "/growfy-react_app/static/media/logo.b51f7fb13abdd7a911763ca020b915d1.svg",
+    "static/media/logo.svg": "/growfy-react_app/static/media/logo.026662efd2163c447ff5140c462a4d40.svg",
     "static/media/01.svg": "/growfy-react_app/static/media/01.046b4e4e1acd125558cd4d120587fbf2.svg",
     "static/media/04.svg": "/growfy-react_app/static/media/04.1c10d1c64e6c38a8545e77269e6be565.svg",
     "static/media/03.svg": "/growfy-react_app/static/media/03.8ae946cb1b224d39aa6fb54df9d5567c.svg",
@@ -90,7 +90,7 @@
     "static/media/Star.svg": "/growfy-react_app/static/media/Star.649e0a5a555513c76abafc0067627f0e.svg",
     "static/media/facebook.svg": "/growfy-react_app/static/media/facebook.6f6fed4e9b5972b8ac962f45b21ee31d.svg",
     "main.07a897de.css.map": "/growfy-react_app/static/css/main.07a897de.css.map",
-    "main.262b4bf1.js.map": "/growfy-react_app/static/js/main.262b4bf1.js.map",
+    "main.3b4cc89b.js.map": "/growfy-react_app/static/js/main.3b4cc89b.js.map",
     "496.75ba197f.chunk.css.map": "/growfy-react_app/static/css/496.75ba197f.chunk.css.map",
     "496.79c1cc64.chunk.js.map": "/growfy-react_app/static/js/496.79c1cc64.chunk.js.map",
     "171.96b5963e.chunk.css.map": "/growfy-react_app/static/css/171.96b5963e.chunk.css.map",
@@ -152,6 +152,6 @@
   },
   "entrypoints": [
     "static/css/main.07a897de.css",
-    "static/js/main.262b4bf1.js"
+    "static/js/main.3b4cc89b.js"
   ]
 }
