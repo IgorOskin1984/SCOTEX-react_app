@@ -1,7 +1,7 @@
 import React from "react";
 import s from './Footer.module.css'
 import { NavLink } from "react-router-dom";
-import { LiNavLink } from "../Header/Menu_link/MenuLink";
+import { LiNavLink } from "../Header/NavLinks/MenuLink";
 import FooterSubscribeForm from "./FooterSubscribeForm/FooterSubscribeForm";
 
 
@@ -51,7 +51,9 @@ const Footer = (props) => {
 					<NavLink
 						key={item.name}
 						className={s.utilityColumnListItem}
-						to={item.link}>{item.name}
+						to={item.link}
+					>
+						{item.name}
 					</NavLink>
 				</li>
 			)

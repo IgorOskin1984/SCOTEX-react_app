@@ -1,5 +1,5 @@
 import React from "react";
-import { LiNavLink } from "../Menu_link/MenuLink";
+import { LiNavLink } from "../NavLinks/MenuLink";
 import s from './SelectPage.module.css'
 
 const pagesNavItemСreater = (arr, onPageItemClick) => {

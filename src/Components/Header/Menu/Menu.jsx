@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import s from './Menu.module.css'
-import { LiNavLink } from "../Menu_link/MenuLink";
+import { LiNavLink } from "../NavLinks/MenuLink";
 import SelectPage from "../Menu_Small_Components/SelectPage";
 import { showMenuTitlesAC } from "../../../Redux/header-toolkitSlice";
 import { useDispatch } from "react-redux";
+//import ScrollToTopNavLink from "../NavLinks/ScrollToTopNavLink";
 
 
-const menuLinkCreater = (arr, props) => arr.map((title) => {
+const menuLinkCreater = (arr, props, componentRef) => arr.map((title) => {
 
 	const dispatch = useDispatch()
 
@@ -29,13 +30,19 @@ const menuLinkCreater = (arr, props) => arr.map((title) => {
 			)
 		default:
 			return (
-				<LiNavLink onPageItemClick={onPageItemClick} key={title} linkPath={title} title={newtitle} />
+				<LiNavLink
+					componentRef={componentRef}
+					onPageItemClick={onPageItemClick}
+					key={title}
+					linkPath={title}
+					title={newtitle} />
 			)
 	}
 
 })
 
 export const Menu = (props) => {
+	//const componentRef = useRef(null);
 	return (
 		<>
 			<nav className={s.menu}>
