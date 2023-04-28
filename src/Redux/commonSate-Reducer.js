@@ -54,7 +54,11 @@ const commonSateSlice = createSlice({
 				title: 'Read our articles & news',
 				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor.'
 			}
-		}
+		},
+		pages: {
+			title: 'Pages',
+			links: ['testimonials', 'blog', 'contact']
+		},
 	}
 })
 

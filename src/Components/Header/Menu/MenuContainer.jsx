@@ -17,7 +17,7 @@ const mapStateToProps = (state) => {
 	return {
 		menuTitles: state.header.menuTitles,
 		isToggle: state.header.burgerMenuButtonToggle,
-		links: state.footerPage.pagesColumn.links,
+		links: state.commonSate.pages.links,
 	}
 }
 
